@@ -4,9 +4,9 @@ A free and open-source application for practicing SMQT (Surveyor Minimum Qualifi
 
 ## Quick Start
 
- If you're just here for the app, download it here:
+If you're just here for the app, download it here:
 
- [Download SMQT Practice Test Installer](https://github.com/SailboatSteve/SMQT_Practice_Exam/releases/latest/download/SMQT_Practice_Test_Setup.exe)
+[Download SMQT Practice Test Installer](https://github.com/SailboatSteve/SMQT_Practice_Exam/releases/latest/download/SMQT_Practice_Test_Setup.exe)
 
 Just download and run the installer - no configuration needed! The application will automatically fetch the latest question bank during installation.
 
@@ -26,13 +26,13 @@ This software is free and open source, distributed under the GNU General Public 
 - Share the software with your friends and neighbors
 - Share the changes you make
 
-## Installation
+## Development Setup
 
-1. Download the latest release
-2. Run `launch.bat` to start the application
-3. Access the application through your web browser at http://localhost:5000
+1. Copy `.env.template` to `.env`
+2. Add your OpenAI API key to `.env`
+3. Install dependencies: `pip install -r requirements.txt`
 
-## Editing Questions via the Admin Portal
+## Using the Admin Portal
 
 The application includes a password-protected admin interface for managing the question bank:
 

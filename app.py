@@ -11,6 +11,7 @@ import random
 import sys
 import webbrowser
 import requests
+import glob
 from datetime import datetime
 from typing import Dict, List, Optional, Set, Union
 import signal
@@ -19,14 +20,20 @@ from werkzeug.security import check_password_hash, generate_password_hash
 import threading
 import time
 import shutil
+from github import Github
+from base64 import b64encode
+from dotenv import load_dotenv
+from flask import Flask, render_template, request, session, redirect, url_for, flash, Response, jsonify, send_from_directory
+from flask_wtf.csrf import CSRFProtect, generate_csrf, validate_csrf
 
-from flask import Flask, render_template, request, session, redirect, url_for, flash, Response
-from flask_wtf import CSRFProtect
-from flask_wtf.csrf import CSRFError
+# Load environment variables from .env file
+load_dotenv()
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev-key-for-testing-only')
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0  # Disable caching
+app.config['GITHUB_TOKEN'] = os.getenv('GITHUB_TOKEN')
+app.config['GITHUB_REPO'] = 'SailboatSteve/SMQT_Practice_Exam'
 csrf = CSRFProtect(app)
 
 # Add no-cache headers to all responses
@@ -46,13 +53,20 @@ ADMIN_PASSWORD_HASH = os.environ.get('ADMIN_PASSWORD_HASH', generate_password_ha
 def get_data_dir():
     """Get the user data directory for storing modifiable files."""
     app_data = os.getenv('APPDATA') or os.path.expanduser('~')
-    data_dir = os.path.join(app_data, 'SMQT Practice Test')
+    data_dir = os.path.join(app_data, 'smqt_practice')
+    os.makedirs(data_dir, exist_ok=True)
+    return data_dir
+
+def get_user_data_dir():
+    """Get the user data directory for storing modifiable files."""
+    app_data = os.getenv('APPDATA') or os.path.expanduser('~')
+    data_dir = os.path.join(app_data, 'smqt_practice')
     os.makedirs(data_dir, exist_ok=True)
     return data_dir
 
 def get_questions_file():
     """Get the path to the questions file, initializing from the bundled file if needed."""
-    data_dir = get_data_dir()
+    data_dir = get_user_data_dir()
     questions_file = os.path.join(data_dir, 'test_questions.json')
     
     # If questions file doesn't exist in user data dir, initialize it
@@ -74,7 +88,11 @@ def admin_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         if not session.get('is_admin'):
+            print("Admin check failed - redirecting to login")  # Debug print
+            if request.is_json:
+                return jsonify({'error': 'Authentication required'}), 401
             return redirect(url_for('admin_login'))
+        print("Admin check passed")  # Debug print
         return f(*args, **kwargs)
     return decorated_function
 
@@ -371,7 +389,7 @@ def quit_app():
     return render_template('goodbye.html')
 
 
-@app.errorhandler(CSRFError)
+@app.errorhandler(403)
 def handle_csrf_error(e):
     """Handle CSRF errors."""
     flash('The form has expired. Please try again.', 'error')
@@ -384,6 +402,11 @@ def update_questions_from_github(target_file=None):
         target_file = QUESTIONS_FILE
         
     try:
+        # Create backup before updating
+        backup_success, backup_result = create_backup()
+        if not backup_success:
+            return False, f"Failed to create backup: {backup_result}"
+
         # Fetch latest questions from GitHub
         url = "https://raw.githubusercontent.com/SailboatSteve/SMQT_Practice_Exam/main/test_questions.json"
         response = requests.get(url)
@@ -401,25 +424,250 @@ def update_questions_from_github(target_file=None):
             json.dump(new_questions, f, indent=2)
             
         return True, "Questions updated successfully!"
+
     except Exception as e:
         return False, f"Error updating questions: {str(e)}"
+
 
 @app.route('/admin/update_questions', methods=['POST'])
 @admin_required
 def update_questions():
     """Update questions from GitHub."""
-    success, message = update_questions_from_github()
-    if success:
-        flash(message, 'success')
-    else:
-        flash(message, 'error')
-    return redirect(url_for('admin'))
+    try:
+        # Verify CSRF token
+        token = request.headers.get('X-CSRFToken')
+        if not token:
+            return jsonify({'error': 'Missing CSRF token'}), 403
+        
+        try:
+            validate_csrf(token)
+            print("CSRF validation passed")
+        except Exception as e:
+            print(f"CSRF validation error: {str(e)}")
+            return jsonify({'error': 'Invalid CSRF token'}), 403
 
+        # Update questions
+        success, message = update_questions_from_github()
+        if not success:
+            return jsonify({'error': message}), 500
+
+        # Clear the cached questions to force reload
+        if 'questions' in session:
+            del session['questions']
+        if 'question_indices' in session:
+            del session['question_indices']
+
+        return jsonify({
+            'success': True,
+            'message': message
+        })
+
+    except Exception as e:
+        print(f"Error updating questions: {str(e)}")
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/download')
+def download():
+    """Show download page."""
+    return render_template('download.html')
+
+@app.route('/help')
+def help_page():
+    """Show the help page."""
+    return render_template('help.html')
 
 def open_browser():
     """Open the browser after a short delay to ensure Flask is running."""
     time.sleep(1.5)  # Wait for Flask to start
     webbrowser.open('http://127.0.0.1:5000')
+
+@app.route('/admin/share_questions', methods=['POST'])
+@admin_required
+def share_questions():
+    """Share user's questions by creating a PR on GitHub."""
+    try:
+        print("Starting share_questions")  # Debug print
+        print(f"Session: {session}")  # Debug print
+        
+        # Verify CSRF token
+        token = request.headers.get('X-CSRFToken')
+        print(f"Got CSRF token: {token}")  # Debug print
+        
+        if not token:
+            return jsonify({'error': 'Missing CSRF token'}), 403
+        
+        try:
+            validate_csrf(token)
+            print("CSRF validation passed")  # Debug print
+        except Exception as e:
+            print(f"CSRF validation error: {str(e)}")
+            return jsonify({'error': 'Invalid CSRF token'}), 403
+
+        # Get GitHub token
+        github_token = app.config.get('GITHUB_TOKEN')
+        if not github_token:
+            return jsonify({'error': 'GitHub token not configured'}), 500
+
+        # Get user's questions
+        questions_path = os.path.join(get_user_data_dir(), 'test_questions.json')
+        if not os.path.exists(questions_path):
+            return jsonify({'error': 'No questions found to share'}), 404
+
+        with open(questions_path, 'r') as f:
+            content = f.read()
+
+        print("Successfully read questions file")  # Debug print
+
+        # Initialize GitHub
+        g = Github(github_token)
+        repo = g.get_repo(app.config['GITHUB_REPO'])
+
+        # Create a new branch
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        branch_name = f'user_submission_{timestamp}'
+        base_branch = repo.get_branch('main')
+        repo.create_git_ref(f'refs/heads/{branch_name}', base_branch.commit.sha)
+
+        print(f"Created branch: {branch_name}")  # Debug print
+
+        # Create file in submissions directory
+        message = f'User question submission {timestamp}'
+        result = repo.create_file(
+            f'submissions/questions_{timestamp}.json',
+            message,
+            content,
+            branch=branch_name
+        )
+
+        print(f"Created file: {result}")  # Debug print
+
+        # Create pull request
+        pr = repo.create_pull(
+            title=f'Question Pool Submission {timestamp}',
+            body='New question pool submission from a user.',
+            head=branch_name,
+            base='main'
+        )
+
+        print(f"Created PR: {pr.html_url}")  # Debug print
+        return jsonify({'success': True, 'pr_url': pr.html_url})
+
+    except Exception as e:
+        print(f"Error sharing questions: {str(e)}")
+        return jsonify({'error': str(e)}), 500
+
+def get_backup_dir():
+    """Get the backup directory path, creating it if needed."""
+    backup_dir = os.path.join(get_user_data_dir(), 'backups')
+    print(f"Backup directory path: {backup_dir}")
+    if not os.path.exists(backup_dir):
+        print(f"Creating backup directory: {backup_dir}")
+        os.makedirs(backup_dir)
+    return backup_dir
+
+def create_backup():
+    """Create a backup of the current questions file."""
+    try:
+        print(f"Creating backup... Questions file: {QUESTIONS_FILE}")
+        
+        # Get current questions
+        with open(QUESTIONS_FILE, 'r', encoding='utf-8') as f:
+            current_questions = f.read()
+
+        # Create backup filename with timestamp
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M')
+        backup_dir = get_backup_dir()
+        print(f"Using backup directory: {backup_dir}")
+        
+        backup_file = os.path.join(backup_dir, f'questions_{timestamp}.json')
+        print(f"Creating backup file: {backup_file}")
+        
+        # Save backup
+        with open(backup_file, 'w', encoding='utf-8') as f:
+            f.write(current_questions)
+            print("Backup file written successfully")
+
+        # Clean up old backups (keep only most recent 3)
+        backup_files = glob.glob(os.path.join(backup_dir, 'questions_*.json'))
+        backup_files.sort(reverse=True)
+        for old_file in backup_files[3:]:
+            print(f"Removing old backup: {old_file}")
+            os.remove(old_file)
+
+        print("Backup creation completed successfully")
+        return True, backup_file
+    except Exception as e:
+        error_msg = f"Error creating backup: {str(e)}"
+        print(error_msg)
+        return False, error_msg
+
+def get_available_backups():
+    """Get list of available backups with timestamps."""
+    try:
+        backup_files = glob.glob(os.path.join(get_backup_dir(), 'questions_*.json'))
+        backups = []
+        for f in sorted(backup_files, reverse=True)[:3]:
+            filename = os.path.basename(f)
+            timestamp = filename.replace('questions_', '').replace('.json', '')
+            date_obj = datetime.strptime(timestamp, '%Y%m%d_%H%M')
+            backups.append({
+                'file': f,
+                'timestamp': timestamp,
+                'date': date_obj.strftime('%B %d, %Y %I:%M %p')
+            })
+        return backups
+    except Exception as e:
+        print(f"Error getting backups: {str(e)}")
+        return []
+
+@app.route('/admin/get_backups', methods=['GET'])
+@admin_required
+def list_backups():
+    """Get list of available backups."""
+    backups = get_available_backups()
+    return jsonify({'backups': backups})
+
+@app.route('/admin/restore_backup', methods=['POST'])
+@admin_required
+def restore_backup():
+    """Restore questions from a backup file."""
+    try:
+        data = request.get_json()
+        backup_file = data.get('backup_file')
+        
+        if not backup_file or not os.path.exists(backup_file):
+            return jsonify({'error': 'Invalid backup file'}), 400
+
+        # Read backup file
+        with open(backup_file, 'r', encoding='utf-8') as f:
+            backup_content = f.read()
+
+        # Validate JSON
+        try:
+            questions = json.loads(backup_content)
+            if not isinstance(questions, list):
+                raise ValueError("Invalid question format")
+        except json.JSONDecodeError:
+            return jsonify({'error': 'Invalid backup file format'}), 400
+
+        # Restore backup
+        with open(QUESTIONS_FILE, 'w', encoding='utf-8') as f:
+            f.write(backup_content)
+
+        # Clear session cache
+        if 'questions' in session:
+            del session['questions']
+        if 'question_indices' in session:
+            del session['question_indices']
+
+        return jsonify({
+            'success': True,
+            'message': 'Questions restored successfully!'
+        })
+
+    except Exception as e:
+        print(f"Error restoring backup: {str(e)}")
+        return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
     # Start browser in a separate thread

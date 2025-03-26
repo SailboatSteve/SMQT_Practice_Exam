@@ -1,5 +1,15 @@
 {% extends 'base.html' %}
 
+{% block head %}
+    <!-- Add jQuery before Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap CSS and JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Admin - SMQT Practice Test</title>
+{% endblock %}
+
 {% block title %}SMQT Practice Test - Admin Dashboard{% endblock %}
 
 {% block content %}
@@ -8,25 +18,22 @@
         <div class="col-12">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2>Question Management</h2>
-                <div>
-                    <a href="{{ url_for('admin_logout') }}" class="btn btn-outline-danger">Logout</a>
-                </div>
             </div>
 
-            <div class="container">
-                <h1 class="mb-4">Admin Dashboard</h1>
-                
+            <div class="container-fluid">
                 <div class="row mb-4">
                     <div class="col">
                         <form action="{{ url_for('admin_logout') }}" method="get" class="d-inline">
                             <button type="submit" class="btn btn-danger">Logout</button>
                         </form>
-                        <form action="{{ url_for('update_questions') }}" method="post" class="d-inline">
-                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-                            <button type="submit" class="btn btn-primary" onclick="return confirm('This will update your question bank from GitHub. A backup will be created. Continue?')">
-                                Update Questions from GitHub
-                            </button>
-                        </form>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#updateQuestionsModal">
+                            <i class="bi bi-cloud-download me-1"></i>
+                            Update Questions from GitHub
+                        </button>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#shareModal">
+                            <i class="bi bi-share me-1"></i>
+                            Share Question Pool
+                        </button>
                     </div>
                 </div>
 
@@ -52,11 +59,10 @@
                                             <td>{{ question.correct_answers|join(', ') }}</td>
                                             <td>
                                                 <button type="button" 
-                                                        class="btn btn-primary btn-sm"
-                                                        data-bs-toggle="modal"
-                                                        data-bs-target="#editModal"
+                                                        class="btn btn-primary btn-sm edit-question"
                                                         data-question-id="{{ loop.index0 }}"
-                                                        onclick="loadQuestion({{ loop.index0 }})">
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#editModal">
                                                     Edit
                                                 </button>
                                             </td>
@@ -133,24 +139,326 @@
         </div>
     </div>
 </div>
+
+<!-- Share Modal -->
+<div class="modal fade" id="shareModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Share Your Question Pool</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <p>Thank you for considering sharing your question pool! Your contribution will help future test-takers better prepare for their SMQT exam.</p>
+                
+                <p>When you share your questions:</p>
+                <ul>
+                    <li>They will be reviewed for quality and accuracy</li>
+                    <li>They may be edited or enhanced by our team</li>
+                    <li>They will help build a comprehensive practice resource</li>
+                </ul>
+
+                <p>Your generosity in sharing your work helps create a supportive community for all SMQT candidates.</p>
+
+                <div class="form-check mt-3">
+                    <input class="form-check-input" type="checkbox" id="shareConfirm">
+                    <label class="form-check-label" for="shareConfirm">
+                        I understand that by sharing my questions, I'm helping future test-takers succeed
+                    </label>
+                </div>
+                <p class="text-muted mt-2 small">
+                    <i class="bi bi-info-circle me-1"></i>
+                    Please click "Share My Questions" only once. There will be a brief delay while your questions are uploaded.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" id="shareBtn" disabled>Share My Questions</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Update Modal -->
+<div class="modal fade" id="updateQuestionsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Update Questions from GitHub</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="update-section mb-4">
+                    <p>This will fetch the latest questions from our community repository. Your current questions will be backed up automatically.</p>
+                    <div class="form-check mt-3">
+                        <input class="form-check-input" type="checkbox" id="updateConfirm">
+                        <label class="form-check-label" for="updateConfirm">
+                            I understand this will update my question pool
+                        </label>
+                    </div>
+                </div>
+                <hr>
+                <div class="backup-section mt-4">
+                    <h6 class="mb-3">Previous Versions</h6>
+                    <div id="backupList" class="list-group" style="max-height: 300px; overflow-y: auto;">
+                        <!-- Backups will be loaded here -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" id="updateQuestionsBtn" disabled>Update Questions</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Restore Backup Modal -->
+<div class="modal fade" id="restoreBackupModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Restore Previous Version</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p class="text-warning">Warning: This will replace your current questions with a previous version.</p>
+                <div class="form-check mt-3">
+                    <input class="form-check-input" type="checkbox" id="restoreConfirm">
+                    <label class="form-check-label" for="restoreConfirm">
+                        I understand this will replace my current questions
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-warning" id="restoreBackupBtn" disabled>Restore This Version</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Thank You Modal -->
+<div class="modal fade" id="thankYouModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Thank You!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>Thank you so much for sharing your questions! Your contribution will make a real difference in helping others prepare for their SMQT exam.</p>
+                <p>Our team will review your submission and incorporate it into the practice test pool. Together, we're building a better resource for everyone.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">You're Welcome!</button>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
 
 {% block scripts %}
 <script>
-function loadQuestion(questionId) {
-    // Update form action
-    document.getElementById('editForm').action = `/admin/question/${questionId}`;
-    
-    // Get question data
+document.addEventListener('DOMContentLoaded', function() {
+    // Question editing functionality
+    const editButtons = document.querySelectorAll('.edit-question');
+    editButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const questionId = this.getAttribute('data-question-id');
+            populateEditModal(questionId);
+        });
+    });
+
+    // Share functionality
+    const shareConfirm = document.getElementById('shareConfirm');
+    const shareBtn = document.getElementById('shareBtn');
+    const shareModal = new bootstrap.Modal(document.getElementById('shareModal'));
+    const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+
+    if (shareConfirm && shareBtn) {
+        shareConfirm.addEventListener('change', function() {
+            shareBtn.disabled = !this.checked;
+        });
+
+        shareBtn.addEventListener('click', shareQuestions);
+    }
+
+    // Update questions functionality
+    const updateConfirm = document.getElementById('updateConfirm');
+    const updateBtn = document.getElementById('updateQuestionsBtn');
+    const updateModal = new bootstrap.Modal(document.getElementById('updateQuestionsModal'));
+
+    if (updateConfirm && updateBtn) {
+        updateConfirm.addEventListener('change', function() {
+            updateBtn.disabled = !this.checked;
+        });
+
+        updateBtn.addEventListener('click', async function() {
+            try {
+                const response = await fetch('/admin/update_questions', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': getCsrfToken()
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                const result = await response.json();
+                if (result.success) {
+                    $('#updateQuestionsModal').modal('hide');
+                    $('.modal-backdrop').remove();
+                    alert('Questions updated successfully! Please log out and back in to see the changes.');
+                } else {
+                    alert(result.error || 'Failed to update questions');
+                }
+                
+                // Reload backups after update
+                loadBackups();
+            } catch (error) {
+                alert('Error updating questions: ' + error.message);
+                console.error('Error:', error);
+            }
+        });
+    }
+
+    // Restore backup functionality
+    const restoreConfirm = document.getElementById('restoreConfirm');
+    const restoreBtn = document.getElementById('restoreBackupBtn');
+
+    if (restoreConfirm) {
+        restoreConfirm.addEventListener('change', function() {
+            restoreBtn.disabled = !this.checked;
+        });
+    }
+
+    if (restoreBtn) {
+        restoreBtn.addEventListener('click', function() {
+            const backupFile = this.getAttribute('data-backup-file');
+            if (backupFile) {
+                restoreBackup(backupFile);
+            }
+        });
+    }
+
+    // Load backups when update modal is shown
+    $('#updateQuestionsModal').on('show.bs.modal', function() {
+        loadBackups();
+    });
+});
+
+function loadBackups() {
+    console.log('Loading backups...');
+    fetch('/admin/get_backups')
+        .then(response => {
+            console.log('Backup response received:', response.status);
+            return response.json();
+        })
+        .then(data => {
+            console.log('Backup data:', data);
+            const backupList = document.getElementById('backupList');
+            backupList.innerHTML = '';
+            
+            if (!data.backups || data.backups.length === 0) {
+                console.log('No backups found');
+                backupList.innerHTML = '<p class="text-muted p-3">No backups available yet</p>';
+                return;
+            }
+
+            console.log(`Found ${data.backups.length} backups`);
+            data.backups.forEach(backup => {
+                const item = document.createElement('div');
+                item.className = 'list-group-item d-flex justify-content-between align-items-center p-3';
+                item.innerHTML = `
+                    <div>
+                        <strong class="d-block">Backup from ${backup.date}</strong>
+                        <small class="text-muted">${backup.file}</small>
+                    </div>
+                    <button class="btn btn-sm btn-outline-primary restore-btn" data-backup-file="${backup.file}">
+                        <i class="bi bi-clock-history me-1"></i>
+                        Restore
+                    </button>
+                `;
+                
+                const restoreBtn = item.querySelector('.restore-btn');
+                restoreBtn.addEventListener('click', () => {
+                    console.log('Restore clicked for backup:', backup.file);
+                    $('#updateQuestionsModal').modal('hide');
+                    const restoreModal = new bootstrap.Modal(document.getElementById('restoreBackupModal'));
+                    document.getElementById('restoreBackupBtn').setAttribute('data-backup-file', backup.file);
+                    restoreModal.show();
+                });
+                
+                backupList.appendChild(item);
+            });
+        })
+        .catch(error => {
+            console.error('Error loading backups:', error);
+            const backupList = document.getElementById('backupList');
+            backupList.innerHTML = 
+                '<div class="alert alert-danger m-3">Error loading backups</div>';
+        });
+}
+
+function restoreBackup(backupFile) {
+    fetch('/admin/restore_backup', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': getCsrfToken()
+        },
+        body: JSON.stringify({
+            backup_file: backupFile
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            $('#restoreBackupModal').modal('hide');
+            $('.modal-backdrop').remove();
+            alert('Questions restored successfully! Please log out and back in to see the changes.');
+        } else {
+            alert(data.error || 'Failed to restore backup');
+        }
+    })
+    .catch(error => {
+        console.error('Error restoring backup:', error);
+        alert('Failed to restore backup');
+        $('#restoreBackupModal').modal('hide');
+        $('.modal-backdrop').remove();
+    });
+}
+
+function getCsrfToken() {
+    const csrfTokenInput = document.querySelector('input[name="csrf_token"]');
+    return csrfTokenInput ? csrfTokenInput.value : null;
+}
+
+function populateEditModal(questionId) {
     fetch(`/admin/question/${questionId}/data`)
         .then(response => response.json())
         .then(question => {
-            // Fill form fields
-            document.getElementById('ksa').value = question.ksa;
-            document.getElementById('question_text').value = question.question;
-            document.getElementById('explanation').value = question.explanation;
+            const editForm = document.getElementById('editForm');
+            editForm.action = `/admin/question/${questionId}`;
             
-            // Fill choices
+            const fields = {
+                ksa: question.ksa,
+                question_text: question.question,
+                explanation: question.explanation,
+            };
+
+            Object.entries(fields).forEach(([id, value]) => {
+                const element = document.getElementById(id);
+                if (element) {
+                    element.value = value;
+                }
+            });
+            
             const choiceInputs = document.querySelectorAll('input[name="choice"]');
             const correctAnswers = document.querySelectorAll('input[name="correct_answer"]');
             
@@ -163,9 +471,8 @@ function loadQuestion(questionId) {
                 }
             });
             
-            // Fill regulations
             const regulationsContainer = document.querySelector('.regulations-container');
-            regulationsContainer.innerHTML = ''; // Clear existing
+            regulationsContainer.innerHTML = '';
             
             question.regulations.forEach(reg => {
                 const div = document.createElement('div');
@@ -179,13 +486,12 @@ function loadQuestion(questionId) {
                 regulationsContainer.appendChild(div);
             });
             
-            // Add empty regulation field
             addRegulation();
         });
 }
 
 function addRegulation() {
-    const container = document.querySelector('.regulations-container');
+    const regulationsContainer = document.querySelector('.regulations-container');
     const div = document.createElement('div');
     div.className = 'input-group mb-2';
     div.innerHTML = `
@@ -194,11 +500,41 @@ function addRegulation() {
         <input type="text" class="form-control" name="regulation_title" placeholder="Title">
         <button type="button" class="btn btn-outline-secondary" onclick="removeRegulation(this)">-</button>
     `;
-    container.appendChild(div);
+    regulationsContainer.appendChild(div);
 }
 
 function removeRegulation(button) {
-    button.closest('.input-group').remove();
+    const group = button.closest('.input-group');
+    if (group) {
+        group.remove();
+    }
+}
+
+function shareQuestions() {
+    const csrfToken = document.querySelector('input[name="csrf_token"]').value;
+    fetch('/admin/share_questions', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': csrfToken
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('Questions shared successfully!');
+        } else {
+            alert(data.error || 'Failed to share questions');
+        }
+        const shareModal = new bootstrap.Modal(document.getElementById('shareModal'));
+        shareModal.hide();
+        const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+        thankYouModal.show();
+    })
+    .catch(error => {
+        console.error('Error sharing questions:', error);
+        alert('Failed to share questions');
+    });
 }
 </script>
 {% endblock %}

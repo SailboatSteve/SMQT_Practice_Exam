@@ -82,24 +82,33 @@
     {% block head %}{% endblock %}
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-3">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ url_for('index') }}">SMQT Practice Test</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('index') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('admin') }}">Admin</a>
+                        <a class="nav-link" href="{{ url_for('admin_login') }}">Admin</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link quit-link" href="{{ url_for('quit_app') }}">Quit</a>
+                        <a class="nav-link" href="/help">Help</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('quit_app') }}">Quit</a>
                     </li>
                 </ul>
+                <div class="navbar-text">
+                    <a href="{{ url_for('download') }}" class="text-light text-decoration-none">
+                        <i class="bi bi-download me-1"></i>
+                        Download this app HERE
+                    </a>
+                </div>
             </div>
         </div>
     </nav>

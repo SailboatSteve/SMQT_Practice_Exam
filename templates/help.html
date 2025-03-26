@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+{% block title %}SMQT Practice Test - Help{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <h1 class="mb-4">Help & Documentation</h1>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            <h2 class="h4 mb-0">Admin Access</h2>
+        </div>
+        <div class="card-body">
+            <p>The admin interface allows you to manage the question pool. To access it:</p>
+            <ol>
+                <li>Click "Admin" in the navigation bar</li>
+                <li>Enter the password: <code>admin</code></li>
+                <li>Click "Login"</li>
+            </ol>
+            <div class="alert alert-info">
+                <i class="bi bi-info-circle me-2"></i>
+                The admin password is intentionally shared to allow community contributions, while reminding users that they are entering an area where permanent changes can be made.
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-4">
+        <div class="card-header">
+            <h2 class="h4 mb-0">Managing Questions</h2>
+        </div>
+        <div class="card-body">
+            <h3 class="h5">Editing Questions</h3>
+            <p>To edit a question:</p>
+            <ol>
+                <li>Click the "Edit" button next to any question</li>
+                <li>Modify any of the following fields:
+                    <ul>
+                        <li>Question text</li>
+                        <li>Answer choices</li>
+                        <li>Correct answer(s)</li>
+                        <li>Explanation</li>
+                        <li>F-tags/KSAs</li>
+                        <li>Regulation references</li>
+                    </ul>
+                </li>
+                <li>Click "Save Changes" to update the question</li>
+            </ol>
+            <div class="alert alert-info">
+                <i class="bi bi-info-circle me-2"></i>
+                While questions cannot be deleted, you can completely edit any question you dislike into a better one. The question pool grows as these new questions are submitted to the community, so please contribute your improvements!
+            </div>
+
+            <h3 class="h5 mt-4">Updating from GitHub</h3>
+            <p>To get the latest questions from our community:</p>
+            <ol>
+                <li>Click "Update Questions from Github"</li>
+                <li>Read the warning about overwriting local changes</li>
+                <li>Check the confirmation box if you agree</li>
+                <li>Click "Update Questions"</li>
+                <li>Log out and back in to see the changes in the admin interface</li>
+            </ol>
+
+            <h3 class="h5 mt-4">Backup and Restore</h3>
+            <p>The application automatically maintains backups of your question pool:</p>
+            <ul>
+                <li>A backup is created each time you update from GitHub</li>
+                <li>The system keeps your last three backups</li>
+                <li>You can view available backups in the Update Questions modal</li>
+            </ul>
+            <p>To restore a previous version:</p>
+            <ol>
+                <li>Click "Update Questions from Github"</li>
+                <li>Look for "Previous Versions" in the modal</li>
+                <li>Click "Restore" next to the version you want</li>
+                <li>Confirm the restore operation</li>
+                <li>Log out and back in to see the restored questions</li>
+            </ol>
+            <div class="alert alert-info">
+                <i class="bi bi-info-circle me-2"></i>
+                Restoring a backup will replace your current question pool. Make sure you want to revert to the previous version before confirming.
+            </div>
+
+            <h3 class="h5 mt-4">Sharing Your Questions</h3>
+            <p>To contribute your questions back to the community:</p>
+            <ol>
+                <li>Make your desired edits to questions</li>
+                <li>Click "Share Question Pool"</li>
+                <li>Read and acknowledge the sharing notice</li>
+                <li>Click "Share My Questions"</li>
+            </ol>
+            <div class="alert alert-success">
+                <i class="bi bi-heart-fill me-2"></i>
+                Your shared questions will be reviewed and may be enhanced before being added to the main question pool. Thank you for contributing to the SMQT learning community!
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2 class="h4 mb-0">Best Practices</h2>
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>Always provide clear explanations for answers to help others learn</li>
+                <li>Include relevant regulation references when possible</li>
+                <li>Use F-tags and KSAs to properly categorize questions</li>
+                <li>Review your changes before sharing them</li>
+                <li>Consider updating from GitHub periodically to get new questions</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

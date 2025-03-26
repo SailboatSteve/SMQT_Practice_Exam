@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Download SMQT Practice Test{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body text-center">
+                    <h1 class="card-title mb-4">Download SMQT Practice Test</h1>
+                    
+                    <p class="lead mb-4">
+                        Download the latest version of the SMQT Practice Test application.
+                        The installer will automatically fetch the most recent question bank during setup.
+                    </p>
+
+                    <div class="d-grid gap-3 col-md-8 mx-auto">
+                        <a href="https://github.com/SailboatSteve/SMQT_Practice_Exam/releases/latest/download/SMQT_Practice_Test_Setup.exe" 
+                           class="btn btn-primary btn-lg">
+                            <i class="bi bi-download me-2"></i>
+                            Download Installer
+                        </a>
+                    </div>
+
+                    <div class="mt-4">
+                        <p class="text-muted">Direct Download URL:</p>
+                        <div class="border rounded p-3 bg-light">
+                            <code class="user-select-all">
+                                https://github.com/SailboatSteve/SMQT_Practice_Exam/releases/latest/download/SMQT_Practice_Test_Setup.exe
+                            </code>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <h5>Installation Instructions</h5>
+                        <ol class="text-start">
+                            <li>Download the installer using the button above, or copy the provided URL into your browser</li>
+                            <li>Run the downloaded file (SMQT_Practice_Test_Setup.exe)</li>
+                            <li>Follow the installation wizard</li>
+                            <li>Launch the app from your Start Menu or Desktop</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
