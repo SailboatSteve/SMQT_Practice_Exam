@@ -2,6 +2,14 @@
 
 A free and open-source application for practicing SMQT (Surveyor Minimum Qualifications Test) questions.
 
+## Quick Start
+
+ If you're just here for the app, download it here:
+
+ [Download SMQT Practice Test Installer](https://github.com/SailboatSteve/SMQT_Practice_Exam/releases/latest/download/SMQT_Practice_Test_Setup.exe)
+
+Just download and run the installer - no configuration needed! The application will automatically fetch the latest question bank during installation.
+
 ## Overview
 
 This application provides a user-friendly interface for:
