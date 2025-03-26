@@ -1,0 +1,186 @@
+{% extends 'base.html' %}
+
+{% block title %}SMQT Practice Test - Admin Dashboard{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>Question Management</h2>
+                <div>
+                    <a href="{{ url_for('admin_logout') }}" class="btn btn-outline-danger">Logout</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>KSA</th>
+                                    <th>Question</th>
+                                    <th>Correct Answers</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for question in questions %}
+                                    <tr>
+                                        <td>{{ loop.index0 }}</td>
+                                        <td>{{ question.ksa }}</td>
+                                        <td>{{ question.question|truncate(100) }}</td>
+                                        <td>{{ question.correct_answers|join(', ') }}</td>
+                                        <td>
+                                            <button type="button" 
+                                                    class="btn btn-primary btn-sm"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    data-question-id="{{ loop.index0 }}"
+                                                    onclick="loadQuestion({{ loop.index0 }})">
+                                                Edit
+                                            </button>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Modal -->
+<div class="modal fade" id="editModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <form action="" method="post" id="editForm">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit Question</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="ksa" class="form-label">KSA</label>
+                        <input type="text" class="form-control" id="ksa" name="ksa" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="question_text" class="form-label">Question</label>
+                        <textarea class="form-control" id="question_text" name="question_text" rows="3" required></textarea>
+                    </div>
+                    
+                    <div id="choices" class="mb-3">
+                        <label class="form-label">Choices</label>
+                        <div class="choices-container">
+                            {% for i in range(4) %}
+                                <div class="input-group mb-2">
+                                    <span class="input-group-text">{{ chr(65 + i) }}</span>
+                                    <input type="text" class="form-control" name="choice" required>
+                                    <div class="input-group-text">
+                                        <input type="checkbox" class="form-check-input mt-0" name="correct_answer" value="{{ chr(65 + i) }}">
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="explanation" class="form-label">Explanation</label>
+                        <textarea class="form-control" id="explanation" name="explanation" rows="3" required></textarea>
+                    </div>
+                    
+                    <div id="regulations" class="mb-3">
+                        <label class="form-label">Regulations</label>
+                        <div class="regulations-container">
+                            <div class="input-group mb-2">
+                                <input type="text" class="form-control" name="regulation_id" placeholder="ID">
+                                <input type="text" class="form-control" name="regulation_section" placeholder="Section">
+                                <input type="text" class="form-control" name="regulation_title" placeholder="Title">
+                                <button type="button" class="btn btn-outline-secondary" onclick="addRegulation()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function loadQuestion(questionId) {
+    // Update form action
+    document.getElementById('editForm').action = `/admin/question/${questionId}`;
+    
+    // Get question data
+    fetch(`/admin/question/${questionId}/data`)
+        .then(response => response.json())
+        .then(question => {
+            // Fill form fields
+            document.getElementById('ksa').value = question.ksa;
+            document.getElementById('question_text').value = question.question;
+            document.getElementById('explanation').value = question.explanation;
+            
+            // Fill choices
+            const choiceInputs = document.querySelectorAll('input[name="choice"]');
+            const correctAnswers = document.querySelectorAll('input[name="correct_answer"]');
+            
+            question.choices.forEach((choice, i) => {
+                if (choiceInputs[i]) {
+                    choiceInputs[i].value = choice;
+                    if (correctAnswers[i]) {
+                        correctAnswers[i].checked = question.correct_answers.includes(String.fromCharCode(65 + i));
+                    }
+                }
+            });
+            
+            // Fill regulations
+            const regulationsContainer = document.querySelector('.regulations-container');
+            regulationsContainer.innerHTML = ''; // Clear existing
+            
+            question.regulations.forEach(reg => {
+                const div = document.createElement('div');
+                div.className = 'input-group mb-2';
+                div.innerHTML = `
+                    <input type="text" class="form-control" name="regulation_id" value="${reg.id}" placeholder="ID">
+                    <input type="text" class="form-control" name="regulation_section" value="${reg.section}" placeholder="Section">
+                    <input type="text" class="form-control" name="regulation_title" value="${reg.title}" placeholder="Title">
+                    <button type="button" class="btn btn-outline-secondary" onclick="removeRegulation(this)">-</button>
+                `;
+                regulationsContainer.appendChild(div);
+            });
+            
+            // Add empty regulation field
+            addRegulation();
+        });
+}
+
+function addRegulation() {
+    const container = document.querySelector('.regulations-container');
+    const div = document.createElement('div');
+    div.className = 'input-group mb-2';
+    div.innerHTML = `
+        <input type="text" class="form-control" name="regulation_id" placeholder="ID">
+        <input type="text" class="form-control" name="regulation_section" placeholder="Section">
+        <input type="text" class="form-control" name="regulation_title" placeholder="Title">
+        <button type="button" class="btn btn-outline-secondary" onclick="removeRegulation(this)">-</button>
+    `;
+    container.appendChild(div);
+}
+
+function removeRegulation(button) {
+    button.closest('.input-group').remove();
+}
+</script>
+{% endblock %}

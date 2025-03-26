@@ -1,0 +1,273 @@
+{
+  "questions": [
+    {
+      "ksa": "A",
+      "question": "Scenario: During an initial tour of a nursing home, you observe a resident in visible distress calling for help. No staff members are present in the immediate area. What is your appropriate action as a surveyor?",
+      "choices": [
+        "A. Immediately assist the resident yourself",
+        "B. Document the observation and continue with your tour",
+        "C. Locate the nearest staff member and inform them of the resident's distress",
+        "D. Return to the area later to see if the situation has been addressed"
+      ],
+      "correct_answers": [
+        "C"
+      ],
+      "explanation": "While surveyors should not intervene directly in resident care (ruling out option A), they have a responsibility to ensure resident safety. The appropriate action is to locate staff to address the immediate concern while maintaining the surveyor role. This aligns with survey protocols that prioritize resident safety while maintaining surveyor objectivity.",
+      "regulations": [
+        {
+          "id": "483.10",
+          "section": "F155",
+          "title": "Resident Rights"
+        },
+        {
+          "id": "483.10",
+          "section": "F157",
+          "title": "Notice of Rights and Services"
+        }
+      ]
+    },
+    {
+      "ksa": "B",
+      "question": "Scenario: During a survey, you observe a resident with dementia becoming agitated during lunch. The staff member assisting them immediately stops feeding and walks away. What deficiencies should you cite?",
+      "choices": [
+        "A. Inadequate staffing levels",
+        "B. Failure to provide person-centered care",
+        "C. Improper response to behavioral symptoms",
+        "D. Lack of specialized training"
+      ],
+      "correct_answers": ["B", "C"],
+      "explanation": "The staff's response demonstrates a failure to provide person-centered care (F675) and inappropriate management of behavioral symptoms (F742). Staff should be trained to use de-escalation techniques and continue providing necessary care while ensuring resident dignity and safety.",
+      "regulations": [
+        {
+          "id": "483.24",
+          "section": "F675",
+          "title": "Quality of Life"
+        },
+        {
+          "id": "483.40",
+          "section": "F742",
+          "title": "Treatment/Services for Mental/Psychosocial Concerns"
+        }
+      ]
+    },
+    {
+      "ksa": "C",
+      "question": "Scenario: During medication pass observation, you notice a nurse crushing medications and mixing them in applesauce before administering them to a resident with dysphagia. What should you verify as a surveyor?",
+      "choices": [
+        "A. Whether the resident likes applesauce",
+        "B. Whether the medications can be safely crushed according to pharmacy guidelines",
+        "C. Whether the nurse is certified to administer medications",
+        "D. Whether the resident has allergies to apples"
+      ],
+      "correct_answers": [
+        "B",
+        "D"
+      ],
+      "explanation": "Surveyors should verify that medications are administered according to professional standards, including checking that medications can be safely crushed (some medications should not be) and that the resident doesn't have allergies to the vehicle used for administration. This ensures both medication safety and resident-centered care.",
+      "regulations": [
+        {
+          "id": "483.45",
+          "section": "F755",
+          "title": "Labeling and Storage of Drugs and Biologicals"
+        },
+        {
+          "id": "483.45",
+          "section": "F761",
+          "title": "Medication Error Rates"
+        }
+      ]
+    },
+    {
+      "ksa": "D",
+      "question": "Scenario: While reviewing medication administration records, you notice several residents receiving psychotropic medications have had dosage increases without documented behaviors or symptoms. What are the appropriate citations?",
+      "choices": [
+        "A. Unnecessary drug usage",
+        "B. Inadequate behavioral monitoring",
+        "C. Lack of informed consent",
+        "D. Improper documentation"
+      ],
+      "correct_answers": ["A", "B", "C"],
+      "explanation": "This situation requires multiple citations: F758 for unnecessary drug usage without adequate indication, F741 for insufficient behavioral monitoring, and F578 for lack of informed consent for psychotropic medication changes. The facility must ensure proper documentation, monitoring, and consent for all psychotropic medication adjustments.",
+      "regulations": [
+        {
+          "id": "483.45",
+          "section": "F758",
+          "title": "Free from Unnecessary Psychotropic Meds/PRN Use"
+        },
+        {
+          "id": "483.40",
+          "section": "F741",
+          "title": "Sufficient/Competent Staff-Behavioral Health Needs"
+        },
+        {
+          "id": "483.10",
+          "section": "F578",
+          "title": "Request/Refuse/Discontinue Treatment"
+        }
+      ]
+    },
+    {
+      "ksa": "E",
+      "question": "Scenario: During a meal observation, you notice that a resident on a therapeutic diet is served a regular meal. What actions should you take as a surveyor?",
+      "choices": [
+        "A. Interview the dietary staff about the meal service process",
+        "B. Review the resident's care plan and physician orders",
+        "C. Observe whether the resident consumes the meal",
+        "D. Check if other residents received correct therapeutic diets"
+      ],
+      "correct_answers": [
+        "A",
+        "B",
+        "D"
+      ],
+      "explanation": "The surveyor should interview dietary staff about the process, review the care plan and orders to verify the correct diet, and check if this is a systemic issue by observing other residents' meals. While observing consumption might provide additional information, the primary focus should be on the facility's systems and processes for ensuring correct therapeutic diets are served.",
+      "regulations": [
+        {
+          "id": "483.35",
+          "section": "F679",
+          "title": "Dietary Services"
+        },
+        {
+          "id": "483.35",
+          "section": "F680",
+          "title": "Nutrition"
+        }
+      ]
+    },
+    {
+      "ksa": "F",
+      "question": "Scenario: A resident complains about not receiving their pain medication on time. What should be your first steps as a surveyor?",
+      "choices": [
+        "A. Review the resident's medication administration records",
+        "B. Interview the resident about their pain management experience",
+        "C. Check the facility's pain assessment protocols",
+        "D. Observe the next scheduled medication pass"
+      ],
+      "correct_answers": [
+        "A",
+        "B"
+      ],
+      "explanation": "The immediate priority is to review medication administration records to verify the complaint and interview the resident to understand their experience with pain management. While checking protocols and observing medication passes are valid steps, they would be secondary to establishing the facts of the specific complaint.",
+      "regulations": [
+        {
+          "id": "483.45",
+          "section": "F755",
+          "title": "Labeling and Storage of Drugs and Biologicals"
+        },
+        {
+          "id": "483.45",
+          "section": "F761",
+          "title": "Medication Error Rates"
+        }
+      ]
+    },
+    {
+      "ksa": "G",
+      "question": "Scenario: During a survey, you observe a nursing assistant moving from one resident to another without changing gloves or performing hand hygiene. What actions should you take?",
+      "choices": [
+        "A. Immediately interrupt the nursing assistant and correct their technique",
+        "B. Document the observation and continue observing for patterns of infection control breaches",
+        "C. Interview the nursing assistant about their infection control training",
+        "D. Review the facility's infection control policies and training records"
+      ],
+      "correct_answers": [
+        "B",
+        "D"
+      ],
+      "explanation": "The surveyor should document the observation and review facility policies and training records to determine if this is a systemic issue. While interviewing the staff member might be helpful later, the immediate priority is to observe for patterns and review the facility's infection control program without interfering with care delivery.",
+      "regulations": [
+        {
+          "id": "483.80",
+          "section": "F881",
+          "title": "Infection Control"
+        },
+        {
+          "id": "483.80",
+          "section": "F882",
+          "title": "Infection Prevention and Control Program"
+        }
+      ]
+    },
+    {
+      "ksa": "H",
+      "question": "Scenario: You observe that a resident's compression stockings are not being removed at bedtime. What should you investigate?",
+      "choices": [
+        "A. Review the physician's orders for compression stocking use",
+        "B. Check the resident's care plan for specific instructions",
+        "C. Interview the resident about their preferences",
+        "D. Observe staff during evening care routines"
+      ],
+      "correct_answers": [
+        "A",
+        "D"
+      ],
+      "explanation": "The surveyor should verify the physician's orders regarding compression stocking use and observe staff practices during evening care. While the care plan and resident preferences are important, the primary concern is ensuring that medical orders are being followed and that staff are implementing proper care procedures.",
+      "regulations": [
+        {
+          "id": "483.25",
+          "section": "F684",
+          "title": "Resident Care and Services"
+        },
+        {
+          "id": "483.25",
+          "section": "F685",
+          "title": "Care Plans"
+        }
+      ]
+    },
+    {
+      "ksa": "I",
+      "question": "Scenario: During a complaint investigation about insufficient staffing, you observe that call lights are not being answered promptly. What should you investigate first?",
+      "choices": [
+        "A. Staffing schedules and actual staff working for the past two weeks",
+        "B. Facility policies on call light response times",
+        "C. Resident and family interviews regarding call light response",
+        "D. Quality assurance data on call light response times"
+      ],
+      "correct_answers": [
+        "A",
+        "C"
+      ],
+      "explanation": "The immediate priority is to review staffing patterns and gather resident/family feedback about call light response times. This focuses on both the factual staffing situation and its direct impact on residents. While policies and quality assurance data are important, they would be secondary to understanding the current situation.",
+      "regulations": [
+        {
+          "id": "483.30",
+          "section": "F727",
+          "title": "Sufficient Staffing"
+        },
+        {
+          "id": "483.30",
+          "section": "F728",
+          "title": "Staffing and Staff Competency"
+        }
+      ]
+    },
+    {
+      "ksa": "K",
+      "question": "Scenario: During a resident interview, they express concerns about privacy during personal care. What are your next steps?",
+      "choices": [
+        "A. Observe staff practices during personal care delivery",
+        "B. Review facility policies on resident privacy",
+        "C. Interview other residents about similar concerns",
+        "D. Check staff training records on privacy procedures"
+      ],
+      "correct_answers": [
+        "B",
+        "C"
+      ],
+      "explanation": "The surveyor should review facility privacy policies and interview other residents to determine if this is a systemic issue. While observing care practices might be helpful, it could violate resident privacy further. Training records would be a secondary consideration after establishing whether there is a pattern of privacy concerns.",
+      "regulations": [
+        {
+          "id": "483.10",
+          "section": "F154",
+          "title": "Resident Rights"
+        },
+        {
+          "id": "483.10",
+          "section": "F156",
+          "title": "Notice of Rights and Services"
+        }
+      ]
+    }
+  ]
+}

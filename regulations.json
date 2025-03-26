@@ -1,0 +1,442 @@
+{
+  "categories": {
+    "resident_rights": {
+      "title": "Resident Rights",
+      "regulations": [
+        {
+          "id": "483.10",
+          "title": "Resident Rights",
+          "file": "som107ap_pp_guidelines_ltcf.pdf",
+          "section": "F550-F586",
+          "topics": [
+            "self-determination",
+            "freedom of choice",
+            "privacy",
+            "grievances",
+            "participation in care planning",
+            "right to be informed",
+            "right to refuse",
+            "personal property",
+            "financial affairs",
+            "visitation rights",
+            "mail and communication",
+            "access to medical records",
+            "representative notification"
+          ]
+        },
+        {
+          "id": "483.12",
+          "title": "Freedom from Abuse, Neglect, and Exploitation",
+          "file": "som107ap_pp_guidelines_ltcf.pdf",
+          "section": "F600-F610",
+          "topics": [
+            "abuse prevention",
+            "investigation of allegations",
+            "reporting requirements",
+            "staff screening",
+            "training requirements",
+            "protection during investigation"
+          ]
+        }
+      ]
+    },
+    "admission_transfer_discharge": {
+      "title": "Admission, Transfer, and Discharge Rights",
+      "regulations": [
+        {
+          "id": "483.15",
+          "title": "Admission, Transfer, and Discharge Rights",
+          "file": "som107ap_pp_guidelines_ltcf.pdf",
+          "section": "F620-F626",
+          "topics": [
+            "admission policies",
+            "transfer procedures",
+            "discharge planning",
+            "documentation requirements",
+            "notice requirements",
+            "bed-hold policies",
+            "return to facility",
+            "equal access to quality care"
+          ]
+        }
+      ]
+    },
+    "resident_assessment": {
+      "title": "Resident Assessment",
+      "regulations": [
+        {
+          "id": "483.20",
+          "title": "Resident Assessment",
+          "file": "som107ap_pp_guidelines_ltcf.pdf",
+          "section": "F636-F645",
+          "topics": [
+            "comprehensive assessments",
+            "quarterly assessments",
+            "accuracy of assessments",
+            "coordination",
+            "use of assessment findings",
+            "discharge planning"
+          ]
+        }
+      ]
+    },
+    "quality_of_care": {
+      "title": "Quality of Care",
+      "regulations": [
+        {
+          "id": "483.24",
+          "title": "Quality of Life",
+          "file": "som107ap_pp_guidelines_ltcf.pdf",
+          "section": "F675-F680",
+          "topics": [
+            "activities",
+            "social services",
+            "meaningful activities",
+            "accommodation of needs",
+            "dignity"
+          ]
+        },
+        {
+          "id": "483.25",
+          "title": "Quality of Care",
+          "file": "som107ap_pp_guidelines_ltcf.pdf",
+          "section": "F684-F700",
+          "topics": [
+            "activities of daily living",
+            "pressure ulcers",
+            "vision and hearing",
+            "accidents",
+            "incontinence",
+            "colostomy/ileostomy care",
+            "assisted nutrition",
+            "parenteral fluids",
+            "respiratory care",
+            "prostheses",
+            "pain management",
+            "foot care",
+            "dialysis",
+            "trauma-informed care"
+          ]
+        }
+      ]
+    },
+    "physician_services": {
+      "title": "Physician Services",
+      "regulations": [
+        {
+          "id": "483.30",
+          "title": "Physician Services",
+          "file": "som107ap_pp_guidelines_ltcf.pdf",
+          "section": "F710-F715",
+          "topics": [
+            "physician supervision",
+            "physician visits",
+            "availability of physicians",
+            "alternate physician participation",
+            "physician delegation",
+            "NPP supervision"
+          ]
+        }
+      ]
+    },
+    "nursing_services": {
+      "title": "Nursing Services",
+      "regulations": [
+        {
+          "id": "483.35",
+          "title": "Nursing Services",
+          "file": "som107ap_pp_guidelines_ltcf.pdf",
+          "section": "F725-F732",
+          "topics": [
+            "sufficient nursing staff",
+            "registered nurse coverage",
+            "nurse staffing information",
+            "nurse aide requirements",
+            "nurse aide training",
+            "nurse aide competency",
+            "nurse aide registry verification",
+            "regular in-service education"
+          ]
+        }
+      ]
+    },
+    "behavioral_health": {
+      "title": "Behavioral Health Services",
+      "regulations": [
+        {
+          "id": "483.40",
+          "title": "Behavioral Health Services",
+          "file": "som107ap_pp_guidelines_ltcf.pdf",
+          "section": "F740-F745",
+          "topics": [
+            "emotional and psychosocial well-being",
+            "mental and psychosocial adjustment difficulties",
+            "appropriate treatment",
+            "mental health rehabilitation",
+            "specialized rehabilitative services",
+            "dementia care"
+          ]
+        }
+      ]
+    },
+    "pharmacy_services": {
+      "title": "Pharmacy Services",
+      "regulations": [
+        {
+          "id": "483.45",
+          "title": "Pharmacy Services",
+          "file": "som107ap_pp_guidelines_ltcf.pdf",
+          "section": "F755-F761",
+          "topics": [
+            "procedures for pharmacy services",
+            "drug regimen review",
+            "reporting irregular findings",
+            "psychotropic drugs",
+            "medication errors",
+            "significant medication errors",
+            "medication error rates",
+            "drug storage",
+            "labeling",
+            "controlled substances"
+          ]
+        }
+      ]
+    },
+    "laboratory_services": {
+      "title": "Laboratory, Radiology, and Other Diagnostic Services",
+      "regulations": [
+        {
+          "id": "483.50",
+          "title": "Laboratory, Radiology, and Other Diagnostic Services",
+          "file": "som107ap_pp_guidelines_ltcf.pdf",
+          "section": "F770-F777",
+          "topics": [
+            "laboratory services",
+            "radiology services",
+            "promptness of services",
+            "notification of results",
+            "laboratory supervision",
+            "radiologist qualifications"
+          ]
+        }
+      ]
+    },
+    "dental_services": {
+      "title": "Dental Services",
+      "regulations": [
+        {
+          "id": "483.55",
+          "title": "Dental Services",
+          "file": "som107ap_pp_guidelines_ltcf.pdf",
+          "section": "F790-F791",
+          "topics": [
+            "routine dental services",
+            "emergency dental services",
+            "appointment assistance",
+            "transportation arrangement",
+            "referral assistance"
+          ]
+        }
+      ]
+    },
+    "food_and_nutrition": {
+      "title": "Food and Nutrition Services",
+      "regulations": [
+        {
+          "id": "483.60",
+          "title": "Food and Nutrition Services",
+          "file": "som107ap_pp_guidelines_ltcf.pdf",
+          "section": "F800-F814",
+          "topics": [
+            "staffing requirements",
+            "meal frequency",
+            "food quality",
+            "therapeutic diets",
+            "food safety",
+            "food storage",
+            "food preparation",
+            "dining assistance",
+            "adaptive equipment",
+            "religious/cultural considerations"
+          ]
+        }
+      ]
+    },
+    "specialized_rehabilitation": {
+      "title": "Specialized Rehabilitative Services",
+      "regulations": [
+        {
+          "id": "483.65",
+          "title": "Specialized Rehabilitative Services",
+          "file": "som107ap_pp_guidelines_ltcf.pdf",
+          "section": "F825-F826",
+          "topics": [
+            "provision of services",
+            "qualifications",
+            "physical therapy",
+            "speech therapy",
+            "occupational therapy",
+            "respiratory therapy",
+            "mental health rehabilitation"
+          ]
+        }
+      ]
+    },
+    "administration": {
+      "title": "Administration",
+      "regulations": [
+        {
+          "id": "483.70",
+          "title": "Administration",
+          "file": "som107ap_pp_guidelines_ltcf.pdf",
+          "section": "F835-F868",
+          "topics": [
+            "governing body",
+            "facility assessment",
+            "staff qualifications",
+            "facility records",
+            "quality assessment and assurance",
+            "disclosure of ownership",
+            "facility closure",
+            "binding arbitration agreements"
+          ]
+        }
+      ]
+    },
+    "quality_assurance": {
+      "title": "Quality Assurance and Performance Improvement",
+      "regulations": [
+        {
+          "id": "483.75",
+          "title": "Quality Assurance and Performance Improvement",
+          "file": "som107ap_pp_guidelines_ltcf.pdf",
+          "section": "F865-F868",
+          "topics": [
+            "QAPI program",
+            "program design",
+            "program feedback",
+            "program systematic analysis",
+            "performance improvement projects",
+            "documentation"
+          ]
+        }
+      ]
+    },
+    "infection_control": {
+      "title": "Infection Prevention and Control",
+      "regulations": [
+        {
+          "id": "483.80",
+          "title": "Infection Control",
+          "file": "qso-20-38-nh-revised.pdf",
+          "section": "F880-F883",
+          "topics": [
+            "infection prevention program",
+            "infection preventionist",
+            "hand hygiene",
+            "PPE use",
+            "standard precautions",
+            "transmission-based precautions",
+            "outbreak response",
+            "isolation procedures",
+            "environmental cleaning",
+            "staff training",
+            "surveillance",
+            "antibiotic stewardship",
+            "COVID-19 testing",
+            "vaccination requirements"
+          ]
+        }
+      ]
+    },
+    "compliance_and_ethics": {
+      "title": "Compliance and Ethics Program",
+      "regulations": [
+        {
+          "id": "483.85",
+          "title": "Compliance and Ethics Program",
+          "file": "som107ap_pp_guidelines_ltcf.pdf",
+          "section": "F895",
+          "topics": [
+            "program requirements",
+            "written standards",
+            "program oversight",
+            "staff training",
+            "monitoring systems",
+            "disciplinary mechanisms",
+            "anonymous reporting"
+          ]
+        }
+      ]
+    },
+    "physical_environment": {
+      "title": "Physical Environment",
+      "regulations": [
+        {
+          "id": "483.90",
+          "title": "Physical Environment",
+          "file": "som107ap_pp_guidelines_ltcf.pdf",
+          "section": "F919-F925",
+          "topics": [
+            "life safety code",
+            "emergency power",
+            "space requirements",
+            "resident rooms",
+            "bathroom facilities",
+            "equipment maintenance",
+            "comfortable temperature",
+            "noise levels",
+            "pest control",
+            "water supply",
+            "ventilation",
+            "lighting"
+          ]
+        }
+      ]
+    },
+    "training_requirements": {
+      "title": "Training Requirements",
+      "regulations": [
+        {
+          "id": "483.95",
+          "title": "Training Requirements",
+          "file": "som107ap_pp_guidelines_ltcf.pdf",
+          "section": "F940-F949",
+          "topics": [
+            "communication",
+            "resident rights",
+            "abuse prevention",
+            "quality assurance",
+            "infection control",
+            "compliance and ethics",
+            "behavioral health",
+            "required in-service training"
+          ]
+        }
+      ]
+    }
+  },
+  "keywords": {
+    "resident distress": ["483.10", "483.25"],
+    "medication errors": ["483.45", "483.25"],
+    "infection control": ["483.80"],
+    "staffing levels": ["483.35"],
+    "resident rights": ["483.10"],
+    "environmental safety": ["483.90"],
+    "quality of care": ["483.25"],
+    "abuse prevention": ["483.10", "483.12"],
+    "admission procedures": ["483.15"],
+    "discharge planning": ["483.15", "483.20"],
+    "physician services": ["483.30"],
+    "behavioral health": ["483.40"],
+    "pharmacy services": ["483.45"],
+    "diagnostic services": ["483.50"],
+    "dental care": ["483.55"],
+    "nutrition": ["483.60"],
+    "rehabilitation": ["483.65"],
+    "administration": ["483.70"],
+    "quality improvement": ["483.75"],
+    "compliance": ["483.85"],
+    "staff training": ["483.95"]
+  }
+}

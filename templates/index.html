@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %}SMQT Practice Test - Home{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                <h2 class="card-title mb-0">SMQT Practice Test</h2>
+            </div>
+            <div class="card-body">
+                <p class="lead">Welcome to the Surveyor Minimum Qualifications Test (SMQT) practice application. This tool will help you prepare for the actual SMQT exam by practicing with multiple-choice questions.</p>
+                
+                {% if total_questions > 0 %}
+                    <p>There are currently <strong>{{ total_questions }}</strong> questions available in the database.</p>
+                    
+                    <form action="{{ url_for('start_test') }}" method="post" class="mt-4">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                        
+                        <div class="mb-3">
+                            <label for="num_questions" class="form-label">Number of questions:</label>
+                            <select class="form-select" id="num_questions" name="num_questions">
+                                {% for n in question_count_options %}
+                                    <option value="{{ n }}">{{ n }} questions{% if n == 140 %} (Full Test){% endif %}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg">Start Practice Test</button>
+                    </form>
+                {% else %}
+                    <div class="alert alert-warning">
+                        <p>There are no questions available in the database yet. Please use the scraper to collect questions or add them manually through the admin interface.</p>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <h4>Getting Started</h4>
+                        <p>To add questions to the database, you can:</p>
+                        <ol>
+                            <li>Use the web scraper to collect questions from online sources:
+                                <pre><code>python scraper.py https://example.com/smqt-questions</code></pre>
+                            </li>
+                            <li>Add questions manually through the <a href="{{ url_for('admin') }}">admin interface</a>.</li>
+                        </ol>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+
+{% block title %}SMQT Practice Test - Question {{ question_id + 1 }}{% endblock %}
+
+{% block content %}
+<div class="container-fluid py-3">
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center py-2">
+                    <h4 class="card-title mb-0 fs-5">Question {{ question_id + 1 }} of {{ total_questions }}</h4>
+                    <span class="badge bg-light text-dark">{{ ((question_id + 1) / total_questions * 100) | round }}%</span>
+                </div>
+                
+                <div class="card-body">
+                    <!-- Progress bar -->
+                    <div class="progress mb-3" style="height: 0.3rem;">
+                        <div class="progress-bar" role="progressbar" 
+                             style="width: {{ ((question_id + 1) / total_questions * 100) | round }}%">
+                        </div>
+                    </div>
+                    
+                    <!-- Question text -->
+                    <div class="question-text mb-3">
+                        <p class="fs-5 mb-2">{{ question.question }}</p>
+                        {% if question.ksa %}
+                            <span class="badge bg-info">KSA: {{ question.ksa }}</span>
+                        {% endif %}
+                    </div>
+                    
+                    <!-- Answer form -->
+                    <form action="{{ url_for('question', question_id=question_id) }}" method="post">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                        
+                        <div class="choices mb-3">
+                            {% for choice in question.choices %}
+                                <div class="choice-container mb-2">
+                                    <input type="checkbox" class="choice-input visually-hidden" 
+                                           id="choice-{{ loop.index }}" 
+                                           name="answer" 
+                                           value="{{ chr(64 + loop.index) }}">
+                                    <label class="choice-label w-100" for="choice-{{ loop.index }}">
+                                        {{ choice }}
+                                    </label>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        
+                        <!-- Navigation buttons -->
+                        <div class="d-flex justify-content-between">
+                            {% if question_id > 0 %}
+                                <a href="{{ url_for('question', question_id=question_id-1) }}" 
+                                   class="btn btn-outline-secondary">Previous</a>
+                            {% else %}
+                                <div></div>
+                            {% endif %}
+                            
+                            <button type="submit" class="btn btn-primary">
+                                {% if question_id + 1 < total_questions %}
+                                    Next Question
+                                {% else %}
+                                    Submit Test
+                                {% endif %}
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="card-footer text-muted py-2">
+                    <small>Select all that apply. If only one answer is correct, select only that option.</small>
+                    {% if question.regulations %}
+                        <div class="mt-1">
+                            <small class="text-muted">Related regulations:</small>
+                            {% for reg in question.regulations %}
+                                <span class="badge bg-secondary ms-1">{{ reg.section }}</span>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.choice-label {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    transition: all 0.2s;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0.5rem 0.75rem;
+}
+
+.choice-label:hover {
+    background-color: #f8f9fa;
+    border-color: #adb5bd;
+}
+
+.choice-input:checked + .choice-label {
+    background-color: #e7f5ff;
+    border-color: #0d6efd;
+    color: #0d6efd;
+}
+
+@media (max-height: 768px) {
+    .card-header {
+        padding: 0.5rem 1rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .card-footer {
+        padding: 0.5rem 1rem;
+    }
+    
+    .fs-5 {
+        font-size: 1rem !important;
+    }
+    
+    .choice-label {
+        padding: 0.375rem 0.75rem;
+    }
+    
+    .mb-2 {
+        margin-bottom: 0.375rem !important;
+    }
+    
+    .mb-3 {
+        margin-bottom: 0.75rem !important;
+    }
+}
+</style>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Pre-select answers if returning to this question
+        var savedAnswers = {{ session.get('answers', {}).get(question_id|string, []) | tojson }};
+        if (savedAnswers) {
+            savedAnswers.forEach(function(answer) {
+                var input = document.querySelector('input[value="' + answer + '"]');
+                if (input) input.checked = true;
+            });
+        }
+    });
+</script>
+{% endblock %}

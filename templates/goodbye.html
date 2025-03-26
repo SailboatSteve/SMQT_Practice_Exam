@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}SMQT Practice Test - Goodbye{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6 text-center">
+            <h2>Thank you for using SMQT Practice Test</h2>
+            <p class="lead mt-4">The application is now closing.</p>
+            <p>You may close this window.</p>
+            <div class="mt-4" id="spinner-container">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Closing...</span>
+                </div>
+            </div>
+            <div class="mt-4 text-muted">
+                <p><small>Like the app? Wanna buy me a taco? CashApp $SailboatSteve</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Remove spinner after 5 seconds
+    setTimeout(function() {
+        document.getElementById('spinner-container').style.display = 'none';
+    }, 5000);
+</script>
+{% endblock %}
