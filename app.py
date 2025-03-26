@@ -9,6 +9,8 @@ import json
 import os
 import random
 import sys
+import webbrowser
+import requests
 from datetime import datetime
 from typing import Dict, List, Optional, Set, Union
 import signal
@@ -16,6 +18,7 @@ from functools import wraps
 from werkzeug.security import check_password_hash, generate_password_hash
 import threading
 import time
+import shutil
 
 from flask import Flask, render_template, request, session, redirect, url_for, flash, Response
 from flask_wtf import CSRFProtect
@@ -35,11 +38,37 @@ def add_no_cache_headers(response):
     return response
 
 # Constants
-QUESTIONS_FILE = os.environ.get('QUESTIONS_FILE', 'test_questions.json')  # Use test_questions.json by default
 DEFAULT_NUM_QUESTIONS = 10
 QUESTION_COUNT_OPTIONS = [10, 35, 70, 140]  # Available options for test length
 REGULATIONS_FILE = 'regulations.json'
 ADMIN_PASSWORD_HASH = os.environ.get('ADMIN_PASSWORD_HASH', generate_password_hash('admin'))  # Default password: admin
+
+def get_data_dir():
+    """Get the user data directory for storing modifiable files."""
+    app_data = os.getenv('APPDATA') or os.path.expanduser('~')
+    data_dir = os.path.join(app_data, 'SMQT Practice Test')
+    os.makedirs(data_dir, exist_ok=True)
+    return data_dir
+
+def get_questions_file():
+    """Get the path to the questions file, initializing from the bundled file if needed."""
+    data_dir = get_data_dir()
+    questions_file = os.path.join(data_dir, 'test_questions.json')
+    
+    # If questions file doesn't exist in user data dir, initialize it
+    if not os.path.exists(questions_file):
+        # Try to copy from the bundled file first
+        bundled_questions = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'test_questions.json')
+        if os.path.exists(bundled_questions):
+            shutil.copy2(bundled_questions, questions_file)
+        else:
+            # If no bundled file, download from GitHub
+            update_questions_from_github(questions_file)
+            
+    return questions_file
+
+# Update the global QUESTIONS_FILE to use the user data directory
+QUESTIONS_FILE = get_questions_file()
 
 def admin_required(f):
     @wraps(f)
@@ -349,5 +378,51 @@ def handle_csrf_error(e):
     return redirect(url_for('index'))
 
 
+def update_questions_from_github(target_file=None):
+    """Fetch the latest questions from GitHub and update the local question bank."""
+    if target_file is None:
+        target_file = QUESTIONS_FILE
+        
+    try:
+        # Fetch latest questions from GitHub
+        url = "https://raw.githubusercontent.com/SailboatSteve/SMQT_Practice_Exam/main/test_questions.json"
+        response = requests.get(url)
+        response.raise_for_status()
+        
+        # Parse and validate the JSON
+        new_questions = response.json()
+        
+        # Basic validation that it's a list of questions
+        if not isinstance(new_questions, list):
+            raise ValueError("Invalid question format")
+            
+        # Save the new questions
+        with open(target_file, 'w', encoding='utf-8') as f:
+            json.dump(new_questions, f, indent=2)
+            
+        return True, "Questions updated successfully!"
+    except Exception as e:
+        return False, f"Error updating questions: {str(e)}"
+
+@app.route('/admin/update_questions', methods=['POST'])
+@admin_required
+def update_questions():
+    """Update questions from GitHub."""
+    success, message = update_questions_from_github()
+    if success:
+        flash(message, 'success')
+    else:
+        flash(message, 'error')
+    return redirect(url_for('admin'))
+
+
+def open_browser():
+    """Open the browser after a short delay to ensure Flask is running."""
+    time.sleep(1.5)  # Wait for Flask to start
+    webbrowser.open('http://127.0.0.1:5000')
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Start browser in a separate thread
+    threading.Thread(target=open_browser, daemon=True).start()
+    # Run Flask app
+    app.run(debug=True, use_reloader=False)  # Disable reloader to prevent multiple browser windows

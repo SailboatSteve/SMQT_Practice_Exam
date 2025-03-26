@@ -13,40 +13,58 @@
                 </div>
             </div>
 
-            <div class="card">
-                <div class="card-body">
-                    <div class="table-responsive">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>KSA</th>
-                                    <th>Question</th>
-                                    <th>Correct Answers</th>
-                                    <th>Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {% for question in questions %}
+            <div class="container">
+                <h1 class="mb-4">Admin Dashboard</h1>
+                
+                <div class="row mb-4">
+                    <div class="col">
+                        <form action="{{ url_for('admin_logout') }}" method="get" class="d-inline">
+                            <button type="submit" class="btn btn-danger">Logout</button>
+                        </form>
+                        <form action="{{ url_for('update_questions') }}" method="post" class="d-inline">
+                            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                            <button type="submit" class="btn btn-primary" onclick="return confirm('This will update your question bank from GitHub. A backup will be created. Continue?')">
+                                Update Questions from GitHub
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
                                     <tr>
-                                        <td>{{ loop.index0 }}</td>
-                                        <td>{{ question.ksa }}</td>
-                                        <td>{{ question.question|truncate(100) }}</td>
-                                        <td>{{ question.correct_answers|join(', ') }}</td>
-                                        <td>
-                                            <button type="button" 
-                                                    class="btn btn-primary btn-sm"
-                                                    data-bs-toggle="modal"
-                                                    data-bs-target="#editModal"
-                                                    data-question-id="{{ loop.index0 }}"
-                                                    onclick="loadQuestion({{ loop.index0 }})">
-                                                Edit
-                                            </button>
-                                        </td>
+                                        <th>ID</th>
+                                        <th>KSA</th>
+                                        <th>Question</th>
+                                        <th>Correct Answers</th>
+                                        <th>Actions</th>
                                     </tr>
-                                {% endfor %}
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    {% for question in questions %}
+                                        <tr>
+                                            <td>{{ loop.index0 }}</td>
+                                            <td>{{ question.ksa }}</td>
+                                            <td>{{ question.question|truncate(100) }}</td>
+                                            <td>{{ question.correct_answers|join(', ') }}</td>
+                                            <td>
+                                                <button type="button" 
+                                                        class="btn btn-primary btn-sm"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#editModal"
+                                                        data-question-id="{{ loop.index0 }}"
+                                                        onclick="loadQuestion({{ loop.index0 }})">
+                                                    Edit
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
