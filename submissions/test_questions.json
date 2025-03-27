@@ -1,0 +1,3343 @@
+[
+  {
+    "ksa": "C",
+    "question": "Scenario: A long-term care facility has an anonymous reporting system in place for staff to report compliance and ethics concerns. What is the purpose of anonymous reporting in this context?",
+    "choices": [
+      "A. To protect staff members from disciplinary action",
+      "B. To encourage open communication and transparency",
+      "C. To eliminate the need for written standards",
+      "D. To bypass the need for disciplinary mechanisms"
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "Anonymous reporting promotes open communication and transparency within the facility, which is crucial for identifying and addressing compliance and ethics issues effectively. This aligns with the requirement for written standards under 42 CFR 483.85 and ensures a culture of accountability and ethical behavior (F895).",
+    "regulations": [
+      {
+        "id": "483.85",
+        "section": "F895",
+        "title": "Compliance and Ethics Program"
+      },
+      {
+        "id": "",
+        "section": "",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "ksa": "F",
+    "question": "Scenario: As a surveyor during an inspection of a long-term care facility, you request to review the written standards related to compliance and ethics program. What should these written standards include?",
+    "choices": [
+      "A. Policies and procedures regarding resident care only",
+      "B. Guidelines for staff disciplinary actions",
+      "C. Procedures for handling complaints and grievances",
+      "D. Facility's marketing strategies"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "Written standards for compliance and ethics program should include guidelines for staff disciplinary actions and procedures for handling complaints and grievances. This ensures that the facility has clear protocols in place to address compliance issues and maintain ethical standards (F895). Marketing strategies are not directly related to compliance and ethics program requirements.",
+    "regulations": [
+      {
+        "id": "483.85",
+        "section": "F895",
+        "title": "Compliance and Ethics Program"
+      }
+    ]
+  },
+  {
+    "ksa": "J",
+    "question": "Scenario: While conducting a survey at a long-term care facility, you discover that the facility lacks proper disciplinary mechanisms for staff who violate compliance and ethics standards. What could be the potential consequences of insufficient disciplinary mechanisms?",
+    "choices": [
+      "A. Increased staff morale",
+      "B. Decreased risk of noncompliance",
+      "C. Continuation of unethical behavior",
+      "D. Improved resident satisfaction"
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Insufficient disciplinary mechanisms can lead to the continuation of unethical behavior within the facility, posing risks to resident safety and quality of care. Proper disciplinary mechanisms are essential to enforce compliance and ethics standards, promoting accountability and a culture of integrity (F895).",
+    "regulations": [
+      {
+        "id": "483.85",
+        "section": "F895",
+        "title": "Compliance and Ethics Program"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "Scenario: During a survey of a long-term care facility, you review the dental services provided to residents. Which of the following are considered routine dental services as per regulatory requirements?",
+    "choices": [
+      "A. Emergency tooth extractions only",
+      "B. Annual comprehensive dental exams",
+      "C. Provision of dentures and bridges",
+      "D. Teeth cleaning every 5 years"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "Routine dental services, as required under 42 CFR 483.55, include annual comprehensive dental exams and the provision of dentures and bridges. These services are essential for maintaining residents' oral health and overall well-being. Emergency tooth extractions and infrequent teeth cleaning do not cover the comprehensive care needed for residents.",
+    "regulations": [
+      {
+        "id": "483.55",
+        "section": "F851",
+        "title": "Dental Services"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: During a survey of a long-term care facility, you review the nurse aide staffing schedule and notice that there are multiple shifts where the required nurse aide-to-resident ratios are not met. What action should you take as a surveyor?",
+    "choices": [
+      "A. Cite the facility for inadequate nurse aide training",
+      "B. Document the findings as a potential deficiency and discuss with the facility management",
+      "C. Ignore the staffing schedule as it does not directly impact patient care",
+      "D. Request additional documentation from the facility before taking any action"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Inadequate nurse aide staffing ratios can directly impact resident care and lead to deficiencies related to quality of care (F-tag 483.35). As a surveyor, it is important to document any findings that indicate potential non-compliance and discuss them with facility management to address and rectify the situation.",
+    "regulations": [
+      {
+        "id": "483.35",
+        "section": "F-tag 483.35",
+        "title": "Nursing Services"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: While reviewing a long-term care facility's medication administration records, you discover that a nurse aide administered a medication without proper training or supervision. What deficiencies should you consider citing?",
+    "choices": [
+      "A. Lack of controlled substances management",
+      "B. Inadequate nurse aide staffing levels",
+      "C. Medication errors related to improper training",
+      "D. Lack of pharmacy services"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "Administering medications without proper training or supervision can lead to medication errors (F-tag 483.45) and deficiencies related to nurse aide training requirements (F-tag 483.35). It is crucial to ensure that nurse aides are adequately trained and supervised in medication administration to prevent errors and ensure resident safety.",
+    "regulations": [
+      {
+        "id": "483.35",
+        "section": "F-tag 483.35",
+        "title": "Nursing Services"
+      },
+      {
+        "id": "483.45",
+        "section": "F-tag 483.45",
+        "title": "Pharmacy Services"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "In the context of nurse aide requirements, which of the following statements is true?",
+    "choices": [
+      "A. Nurse aides must have a minimum of a high school diploma",
+      "B. Nurse aides must complete a state-approved training program and pass a competency evaluation",
+      "C. Nurse aides are not required to undergo any formal training before providing care",
+      "D. Nurse aides are allowed to administer medications independently"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "According to federal regulations (42 CFR 483.35), nurse aides must complete a state-approved training program and pass a competency evaluation to demonstrate their knowledge and skills in providing quality care to residents. This requirement ensures that nurse aides are adequately prepared to meet the needs of residents in long-term care facilities.",
+    "regulations": [
+      {
+        "id": "483.35",
+        "section": "42 CFR 483.35",
+        "title": "Nursing Services"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "What is the appropriate action for a surveyor to take upon identifying significant medication errors during a survey?",
+    "choices": [
+      "A. Notify the facility's pharmacy services director",
+      "B. Document the errors and discuss them with the facility's management",
+      "C. Ignore the errors if they did not result in harm to residents",
+      "D. Report the errors to the state licensing agency immediately"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Significant medication errors pose a serious risk to resident safety and require immediate attention. As a surveyor, it is important to document these errors and discuss them with the facility's management to ensure appropriate corrective actions are taken to prevent future incidents. Reporting to the state licensing agency may also be necessary depending on the severity of the errors.",
+    "regulations": [
+      {
+        "id": "483.45",
+        "section": "F-tag 483.45",
+        "title": "Pharmacy Services"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "When it comes to controlled substances in long-term care facilities, which of the following statements is correct?",
+    "choices": [
+      "A. Nurse aides are permitted to handle and administer controlled substances without supervision",
+      "B. Controlled substances must be securely stored and only accessible to authorized personnel",
+      "C. Long-term care facilities are not required to keep records of controlled substances usage",
+      "D. Controlled substances can be disposed of in regular waste bins"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Controlled substances must be securely stored and only accessible to authorized personnel to prevent diversion and ensure resident safety (F-tag 483.45). Proper storage and handling of controlled substances are essential components of effective pharmacy services in long-term care facilities.",
+    "regulations": [
+      {
+        "id": "483.45",
+        "section": "F-tag 483.45",
+        "title": "Pharmacy Services"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: A long-term care facility resident requests a copy of their admission agreement for review. What should the facility do to comply with the regulations?",
+    "choices": [
+      "A. Provide a copy of the agreement within 30 days of the request",
+      "B. Refuse to provide a copy as it is confidential information",
+      "C. Allow the resident to review the agreement on-site without providing a copy",
+      "D. Provide a summary of the agreement instead of a full copy"
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Residents have the right to review their admission agreement promptly and to receive a copy of the agreement upon request (F620). This regulation ensures transparency and allows residents to understand their rights and responsibilities.",
+    "regulations": [
+      {
+        "id": "483.15",
+        "section": "F620",
+        "title": "Admission Rights"
+      }
+    ]
+  },
+  {
+    "ksa": "F",
+    "question": "Scenario: A long-term care facility admits a resident with a pre-existing pressure ulcer. What documentation is required regarding the resident's condition upon admission?",
+    "choices": [
+      "A. Record of the ulcer obtained from the resident's previous healthcare provider",
+      "B. Initial assessment of the ulcer by the facility's nursing staff",
+      "C. Documentation of the plan of care to address the pressure ulcer",
+      "D. Physician's order for specific treatments related to the ulcer"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "Upon admission, facilities must conduct an initial assessment of the resident's condition, including any existing pressure ulcers, and develop a plan of care to address these conditions (F725). This ensures that residents receive appropriate and timely interventions for their healthcare needs.",
+    "regulations": [
+      {
+        "id": "483.15",
+        "section": "F725",
+        "title": "Admission Rights"
+      }
+    ]
+  },
+  {
+    "ksa": "H",
+    "question": "What are the qualifications required for a radiologist providing services to a long-term care facility?",
+    "choices": [
+      "A. Completion of an accredited radiology residency program",
+      "B. Board certification in radiology",
+      "C. Valid state medical license",
+      "D. Membership in a professional radiology society"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "Regulations stipulate that radiologists providing services to long-term care facilities must have appropriate qualifications, including board certification in radiology and a valid state medical license (F825). These requirements ensure that residents receive high-quality diagnostic services from qualified professionals.",
+    "regulations": [
+      {
+        "id": "483.50",
+        "section": "F825",
+        "title": "Laboratory, Radiology, and Other Diagnostic Services"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "What is the facility's responsibility regarding bed-hold policies for residents who are temporarily hospitalized?",
+    "choices": [
+      "A. Charge the resident for the vacant bed during hospitalization",
+      "B. Hold the bed for the resident without charging for a specified period",
+      "C. Fill the vacant bed with a new resident until the hospitalized resident returns",
+      "D. Discharge the resident if hospitalization exceeds 30 days"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Facilities must have policies in place to hold a bed for a resident who is temporarily hospitalized without charging the resident for the bed (F739). This regulation aims to ensure continuity of care for residents and prevent unnecessary discharge and readmission processes.",
+    "regulations": [
+      {
+        "id": "483.15",
+        "section": "F739",
+        "title": "Admission Rights"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "What is the timeframe within which laboratory test results must be promptly provided to the resident's attending physician?",
+    "choices": [
+      "A. Within 24 hours of the test being completed",
+      "B. Within 48 hours of the test being completed",
+      "C. Within 72 hours of the test being completed",
+      "D. Within 7 days of the test being completed"
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Laboratory regulations require that test results be promptly provided to the attending physician, typically within 48 to 72 hours of the test being completed (F740). This ensures timely communication of diagnostic information to facilitate appropriate medical management for residents.",
+    "regulations": [
+      {
+        "id": "483.50",
+        "section": "F740",
+        "title": "Laboratory, Radiology, and Other Diagnostic Services"
+      },
+      {
+        "id": "",
+        "section": "",
+        "title": ""
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: A long-term care facility is implementing a Quality Assurance and Performance Improvement (QAPI) program. Which of the following activities would be part of the program design phase?",
+    "choices": [
+      "A. Identifying potential areas for improvement",
+      "B. Analyzing data to identify trends",
+      "C. Implementing corrective actions",
+      "D. Providing ongoing staff training"
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "The program design phase of QAPI involves identifying potential areas for improvement, setting goals, and determining strategies to address quality issues. This is essential for laying the foundation of the program (483.75). Analyzing data (483.75) and implementing corrective actions (483.75) come in later phases.",
+    "regulations": [
+      {
+        "id": "483.75",
+        "section": "F865",
+        "title": "QAPI Program and Plan"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "In the context of a QAPI program, what is the purpose of program systematic analysis?",
+    "choices": [
+      "A. To establish disciplinary mechanisms",
+      "B. To assess the effectiveness of interventions",
+      "C. To encourage anonymous reporting",
+      "D. To provide program oversight"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Program systematic analysis within a QAPI program involves evaluating data and outcomes to determine the effectiveness of interventions and initiatives aimed at improving quality of care (483.75). This analysis helps in identifying areas of success and areas needing further improvement.",
+    "regulations": [
+      {
+        "id": "483.75",
+        "section": "F865",
+        "title": "QAPI Program and Plan"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "What role does program feedback play in a QAPI program?",
+    "choices": [
+      "A. It ensures anonymous reporting",
+      "B. It enforces disciplinary mechanisms",
+      "C. It provides data to assess performance",
+      "D. It establishes program oversight"
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Program feedback in a QAPI program involves providing data and information to assess the performance of the facility in meeting quality improvement goals (483.75). This feedback loop is crucial for continuous improvement and monitoring of outcomes.",
+    "regulations": [
+      {
+        "id": "483.75",
+        "section": "F865",
+        "title": "QAPI Program and Plan"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "What is a key component of a Compliance and Ethics Program regarding disciplinary mechanisms?",
+    "choices": [
+      "A. Encouraging anonymous reporting",
+      "B. Implementing staff training programs",
+      "C. Establishing clear conflict resolution policies",
+      "D. Enforcing consistent disciplinary actions"
+    ],
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "A crucial aspect of a Compliance and Ethics Program (483.85) is the enforcement of consistent disciplinary actions for non-compliance with regulations and ethical standards. This helps in maintaining accountability and promoting a culture of compliance within the facility.",
+    "regulations": [
+      {
+        "id": "483.85",
+        "section": "F901",
+        "title": "Compliance and Ethics Program"
+      }
+    ]
+  },
+  {
+    "ksa": "E",
+    "question": "Which of the following are benefits of anonymous reporting within a Compliance and Ethics Program?",
+    "choices": [
+      "A. Protecting employees from disciplinary actions",
+      "B. Identifying areas of non-compliance",
+      "C. Establishing clear reporting hierarchies",
+      "D. Encouraging open communication"
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Anonymous reporting in a Compliance and Ethics Program (483.85) helps protect employees from potential retaliation, encourages open communication, and facilitates the identification of areas of non-compliance without fear of reprisal. This promotes transparency and accountability within the organization.",
+    "regulations": [
+      {
+        "id": "483.85",
+        "section": "F903",
+        "title": "Compliance and Ethics Program"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: During a survey, you notice a resident's room is consistently untidy with dirty linens on the floor and personal items scattered around. What should you consider when assessing the facility's compliance with regulations?",
+    "choices": [
+      "A. The resident's social services plan",
+      "B. The resident's accommodation needs",
+      "C. The resident's dignity and privacy",
+      "D. The facility's abuse prevention training"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "The untidy room raises concerns about meeting the resident's accommodation needs (F241) and respecting their dignity and privacy (F550). These deficiencies relate to the Quality of Care regulations and the importance of maintaining a clean and organized environment for residents.",
+    "regulations": [
+      {
+        "id": "483.24",
+        "section": "F241",
+        "title": "Quality of Care"
+      },
+      {
+        "id": "483.24",
+        "section": "F550",
+        "title": "Quality of Care"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "During an interview with a staff member, you learn that the facility conducts monthly in-service training sessions on resident abuse prevention. What should you verify to ensure compliance with Training Requirements regulations?",
+    "choices": [
+      "A. The content of the training sessions",
+      "B. The qualifications of the staff conducting the training",
+      "C. The attendance records of all staff members",
+      "D. The facility's social services policies"
+    ],
+    "correct_answers": [
+      "A",
+      "C"
+    ],
+    "explanation": "To ensure compliance with Training Requirements (483.95), surveyors should verify both the content of the in-service training sessions related to abuse prevention and the attendance records of all staff members. This ensures that staff receive appropriate training and that the facility meets regulatory standards.",
+    "regulations": [
+      {
+        "id": "483.95",
+        "section": "F725",
+        "title": "Training Requirements"
+      },
+      {
+        "id": "483.95",
+        "section": "F726",
+        "title": "Training Requirements"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: While observing resident care, you notice a staff member addressing a resident in a condescending tone and ignoring their requests for assistance. What deficiencies in Quality of Care and Compliance should you consider citing?",
+    "choices": [
+      "A. Lack of social services support",
+      "B. Failure to accommodate the resident's needs",
+      "C. Violation of resident dignity and privacy",
+      "D. Inadequate abuse prevention training"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "The staff member's behavior indicates a failure to accommodate the resident's needs (F241) and a violation of the resident's dignity and privacy (F550). These deficiencies highlight the importance of respectful and person-centered care, as outlined in the Quality of Care regulations.",
+    "regulations": [
+      {
+        "id": "483.24",
+        "section": "F241",
+        "title": "Quality of Care"
+      },
+      {
+        "id": "483.24",
+        "section": "F550",
+        "title": "Quality of Care"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "During a facility tour, you review the staff training records and notice that several employees have not completed the required in-service training on abuse prevention. How should you address this non-compliance with Training Requirements regulations?",
+    "choices": [
+      "A. Issue an immediate deficiency citation",
+      "B. Recommend additional social services training",
+      "C. Ask the facility to develop an abuse prevention plan",
+      "D. Verify the effectiveness of the current training program"
+    ],
+    "correct_answers": [
+      "A",
+      "D"
+    ],
+    "explanation": "Non-compliance with required in-service training on abuse prevention violates Training Requirements (483.95). Surveyors should issue an immediate deficiency citation (F725) and verify the effectiveness of the current training program to ensure staff receive proper education on preventing abuse.",
+    "regulations": [
+      {
+        "id": "483.95",
+        "section": "F725",
+        "title": "Training Requirements"
+      },
+      {
+        "id": "483.95",
+        "section": "F726",
+        "title": "Training Requirements"
+      }
+    ]
+  },
+  {
+    "ksa": "E",
+    "question": "Scenario: A resident with limited mobility expresses frustration with the lack of accessible facilities, such as grab bars in the bathroom and ramps at the entrance. How should you evaluate the facility's compliance with Quality of Care regulations?",
+    "choices": [
+      "A. Assess the resident's social services plan",
+      "B. Review the facility's abuse prevention policies",
+      "C. Ensure the facility accommodates the resident's needs",
+      "D. Verify the staff's compliance with ethics training"
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "The lack of accessible facilities for a resident with limited mobility raises concerns about meeting the resident's needs (F241) as per the Quality of Care regulations. Surveyors should ensure that the facility accommodates residents' physical limitations to promote their well-being and safety.",
+    "regulations": [
+      {
+        "id": "483.24",
+        "section": "F241",
+        "title": "Quality of Care"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: During a routine inspection, you discover that the long-term care facility does not have an established Compliance and Ethics Program in place. What actions should you take as a surveyor?",
+    "choices": [
+      "A. Recommend the facility to develop and implement a Compliance and Ethics Program",
+      "B. Immediately issue a deficiency citation for non-compliance",
+      "C. Verify the facility's corrective action plan for the deficiency",
+      "D. Ignore the issue if it does not impact resident care directly"
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "As per regulation 42 CFR 483.85, facilities are required to establish and maintain an effective Compliance and Ethics Program. Surveyors should educate and guide facilities towards compliance before considering citations. This ensures facilities understand and fulfill regulatory requirements.",
+    "regulations": [
+      {
+        "id": "483.85",
+        "section": "F895",
+        "title": "Compliance and Ethics Program"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "During an interview with staff members at a long-term care facility, you inquire about the training they receive on compliance and ethics. Which of the following topics should staff training on Compliance and Ethics Program cover?",
+    "choices": [
+      "A. Reporting suspected violations",
+      "B. Handling resident complaints",
+      "C. Protecting resident privacy",
+      "D. Managing facility finances"
+    ],
+    "correct_answers": [
+      "A",
+      "C"
+    ],
+    "explanation": "Training on Compliance and Ethics Program should include topics like reporting suspected violations (F895), protecting resident privacy (F865), and other relevant areas to ensure staff understand their responsibilities in upholding compliance and ethical standards in resident care.",
+    "regulations": [
+      {
+        "id": "483.85",
+        "section": "F895",
+        "title": "Compliance and Ethics Program"
+      },
+      {
+        "id": "483.10",
+        "section": "F865",
+        "title": "Privacy and Confidentiality"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: A resident's family member expresses concerns about the facility's admission policies, citing lack of transparency and unclear procedures. How should a long-term care facility address such concerns in compliance with regulations?",
+    "choices": [
+      "A. Provide the family member with a written copy of the facility's admission policies",
+      "B. Explain the admission process thoroughly to the family member",
+      "C. Review the admission policies with the family member and address any questions or issues",
+      "D. Inform the family member that admission policies are confidential"
+    ],
+    "correct_answers": [
+      "A",
+      "C"
+    ],
+    "explanation": "Admission policies must be transparent and accessible as per 42 CFR 483.15. Facilities should provide written copies of policies and address any concerns or questions to ensure families understand the admission process. Confidentiality should not override the resident's right to information.",
+    "regulations": [
+      {
+        "id": "483.15",
+        "section": "F588",
+        "title": "Admission, Transfer, and Discharge Rights"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "When reviewing a long-term care facility's bed-hold policies, what factors should a surveyor consider to ensure compliance with regulations?",
+    "choices": [
+      "A. Duration of bed-hold periods",
+      "B. Notification requirements to residents and families",
+      "C. Bed-hold cost implications",
+      "D. Staff training on bed-hold policies"
+    ],
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "Bed-hold policies must specify the duration of bed-hold periods and include notification requirements to residents and families as outlined in 42 CFR 483.15. Surveyors should assess whether these elements are clearly defined and communicated to ensure resident rights are upheld during temporary absences.",
+    "regulations": [
+      {
+        "id": "483.15",
+        "section": "F596",
+        "title": "Bed-Hold Policy"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "During an observation of a long-term care facility, you notice inadequate monitoring systems in place to track compliance with ethical standards. What actions should a surveyor take in this situation?",
+    "choices": [
+      "A. Interview facility leadership about monitoring systems for compliance",
+      "B. Issue an immediate citation for non-compliance",
+      "C. Ignore the monitoring system deficiency if no harm to residents is evident",
+      "D. Review the facility's resident admission records instead"
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Monitoring systems are essential for tracking compliance with ethical standards under 42 CFR 483.85. Surveyors should engage facility leadership to understand their monitoring processes, identify deficiencies, and guide them towards improvement to ensure ongoing compliance and adherence to ethical practices.",
+    "regulations": [
+      {
+        "id": "483.85",
+        "section": "F895",
+        "title": "Compliance and Ethics Program"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: During a survey, you review a long-term care facility's Compliance and Ethics Program document. What should this program ideally include?",
+    "choices": [
+      "A. A detailed guide on resident care procedures",
+      "B. Written standards of conduct and compliance policies",
+      "C. Staff scheduling templates",
+      "D. Emergency response protocols"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Compliance and Ethics Program requirements include written standards of conduct and compliance policies (F895). These standards ensure that the facility's operations align with ethical and legal guidelines to promote quality care and resident safety.",
+    "regulations": [
+      {
+        "id": "483.85",
+        "section": "F895",
+        "title": "Compliance and Ethics Program"
+      }
+    ]
+  },
+  {
+    "ksa": "K",
+    "question": "Which of the following is NOT a key element of an effective Compliance and Ethics Program in a long-term care facility?",
+    "choices": [
+      "A. Program oversight by high-level personnel",
+      "B. Regular staff training on ethical standards",
+      "C. Implementation of strict punitive measures for non-compliance",
+      "D. Written standards of conduct and compliance policies"
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "An effective Compliance and Ethics Program should focus on prevention through education and guidance rather than strict punitive measures (F895). The program should emphasize adherence to ethical standards and regulatory requirements to maintain a culture of compliance and integrity.",
+    "regulations": [
+      {
+        "id": "483.85",
+        "section": "F895",
+        "title": "Compliance and Ethics Program"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: While inspecting a long-term care facility, you notice that some resident rooms have inadequate lighting levels. What regulation does this deficiency relate to?",
+    "choices": [
+      "A. 42 CFR 483.85",
+      "B. F882",
+      "C. 42 CFR 483.90",
+      "D. F884"
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Inadequate lighting in resident rooms violates the Physical Environment requirements related to comfortable lighting (F882). Proper lighting levels are essential for resident safety, well-being, and the overall quality of care.",
+    "regulations": [
+      {
+        "id": "483.90",
+        "section": "F882",
+        "title": "Physical Environment"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "What is a crucial aspect of maintaining a comfortable temperature in a long-term care facility, as per regulatory standards?",
+    "choices": [
+      "A. Providing blankets to all residents",
+      "B. Ensuring temperature settings meet resident comfort needs",
+      "C. Setting a fixed temperature of 75\u00b0F in all areas",
+      "D. Installing air conditioning units in common areas only"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Maintaining a comfortable temperature in accordance with resident needs is vital (F881). Facilities must adjust temperature settings to ensure resident comfort and well-being, taking into account individual preferences and environmental factors.",
+    "regulations": [
+      {
+        "id": "483.90",
+        "section": "F881",
+        "title": "Physical Environment"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Which of the following actions contributes to effective pest control in a long-term care facility?",
+    "choices": [
+      "A. Placing uncovered food containers in resident rooms",
+      "B. Regularly inspecting and sealing potential entry points for pests",
+      "C. Allowing trash to accumulate in common areas for extended periods",
+      "D. Using pesticides without proper training or precautions"
+    ],
+    "correct_answers": [
+      "B",
+      "D"
+    ],
+    "explanation": "Effective pest control involves regular inspection and maintenance to prevent infestations (F812) and the safe use of pesticides by trained personnel to minimize risks to residents, staff, and the environment. Allowing trash accumulation and improper food storage can attract pests, leading to regulatory non-compliance.",
+    "regulations": [
+      {
+        "id": "483.90",
+        "section": "F812",
+        "title": "Physical Environment"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: During a survey of a long-term care facility, you notice that the kitchen staff is not using separate cutting boards for raw meat and vegetables. What action should you take as a surveyor?",
+    "choices": [
+      "A. Issue an immediate deficiency citation for food safety violations",
+      "B. Discuss the observation with the facility's food service director",
+      "C. Ignore the issue as it is a common practice in many facilities",
+      "D. Recommend additional training for kitchen staff on food safety protocols"
+    ],
+    "correct_answers": [
+      "B",
+      "D"
+    ],
+    "explanation": "The correct actions are to discuss the observation with the facility's food service director to address the deficiency and recommend additional training for kitchen staff on food safety protocols. This ensures compliance with regulations on food safety (F371) and promotes safe food handling practices.",
+    "regulations": [
+      {
+        "id": "483.60",
+        "section": "F371",
+        "title": "Food Safety Requirements"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "During a survey, you find that the facility's menu does not offer any options for residents with diabetes. What deficiency would this most likely relate to?",
+    "choices": [
+      "A. Inadequate staffing levels in the food service department",
+      "B. Failure to provide therapeutic diets as ordered by physicians",
+      "C. Lack of variety in the menu options",
+      "D. Insufficient training provided to the dietary staff"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "The lack of menu options for residents with diabetes relates to the deficiency of failure to provide therapeutic diets as ordered by physicians (F361). Staff should ensure that residents receive appropriate diets as prescribed to meet their specific nutritional needs.",
+    "regulations": [
+      {
+        "id": "483.60",
+        "section": "F361",
+        "title": "Therapeutic Diets"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: During a resident interview, you discover that a particular resident with swallowing difficulties is being served foods that are not in the prescribed texture-modified form. What actions should you take as a surveyor?",
+    "choices": [
+      "A. Immediately report the facility to the state health department",
+      "B. Discuss the issue with the resident's family for intervention",
+      "C. Verify the accuracy of the resident's dietary assessments and care plans",
+      "D. Recommend additional training for the dietary staff on texture-modified diets"
+    ],
+    "correct_answers": [
+      "C",
+      "D"
+    ],
+    "explanation": "As a surveyor, you should verify the accuracy of the resident's dietary assessments and care plans to ensure compliance with regulations on resident assessments (F642) and therapeutic diets (F361). Additionally, recommending additional training for dietary staff on texture-modified diets can prevent future deficiencies.",
+    "regulations": [
+      {
+        "id": "483.20",
+        "section": "F642",
+        "title": "Accuracy of Assessments"
+      },
+      {
+        "id": "483.60",
+        "section": "F361",
+        "title": "Therapeutic Diets"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "During a survey, you observe that the facility does not conduct quarterly assessments for residents as required. What deficiency would this most likely result in?",
+    "choices": [
+      "A. Failure to comply with staffing requirements",
+      "B. Lack of accuracy in resident assessments",
+      "C. Inadequate discharge planning for residents",
+      "D. Non-compliance with regulations on resident assessment"
+    ],
+    "correct_answers": [
+      "B",
+      "D"
+    ],
+    "explanation": "The failure to conduct quarterly assessments for residents results in deficiencies related to both lack of accuracy in resident assessments (F641) and non-compliance with regulations on resident assessment (F641). These assessments are crucial for determining residents' current status and planning appropriate care.",
+    "regulations": [
+      {
+        "id": "483.20",
+        "section": "F641",
+        "title": "Accuracy of Assessments"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: While reviewing discharge plans, you notice that a resident with specific dietary requirements does not have a clear plan for nutritional support post-discharge. What should you do as a surveyor?",
+    "choices": [
+      "A. Issue a deficiency citation for inadequate discharge planning",
+      "B. Contact the resident's healthcare provider for clarification",
+      "C. Discuss the issue with the facility's social worker or discharge planner",
+      "D. Ignore the deficiency as it does not directly impact resident care"
+    ],
+    "correct_answers": [
+      "A",
+      "C"
+    ],
+    "explanation": "As a surveyor, you should issue a deficiency citation for inadequate discharge planning related to resident care (F657) and discuss the issue with the facility's social worker or discharge planner to ensure appropriate plans are in place for residents with specific needs post-discharge.",
+    "regulations": [
+      {
+        "id": "483.20",
+        "section": "F657",
+        "title": "Discharge Planning"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: A long-term care facility has implemented COVID-19 testing protocols for all staff and residents. What regulation mandates these testing requirements?",
+    "choices": [
+      "A. 42 CFR 483.80 - Infection prevention and control",
+      "B. F880 - Infection control",
+      "C. F742 - Treatment/Services for Mental/Psychosocial Concerns",
+      "D. 42 CFR 483.40 - Behavioral Health Services"
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "The COVID-19 testing protocols for staff and residents in long-term care facilities are mandated by 42 CFR 483.80, specifically addressing infection prevention and control measures. This regulation ensures the safety and well-being of residents and staff in the facility.",
+    "regulations": [
+      {
+        "id": "483.80",
+        "section": "F880",
+        "title": "Infection Control"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "Which of the following are key components of staff training related to infection prevention and control in long-term care facilities?",
+    "choices": [
+      "A. Proper hand hygiene techniques",
+      "B. Correct use of personal protective equipment (PPE)",
+      "C. Recognition of early dementia symptoms",
+      "D. Monitoring emotional well-being of residents"
+    ],
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "Staff training in infection prevention and control should include proper hand hygiene techniques and correct use of personal protective equipment (PPE) to prevent the spread of infections (F880). Recognizing early dementia symptoms and monitoring emotional well-being are important for Behavioral Health Services (483.40) but not directly related to infection control.",
+    "regulations": [
+      {
+        "id": "483.80",
+        "section": "F880",
+        "title": "Infection Control"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: A resident with dementia in a long-term care facility exhibits agitation and aggression. Which interventions are appropriate for addressing the resident's behavioral symptoms?",
+    "choices": [
+      "A. Administering sedative medications",
+      "B. Implementing person-centered care approaches",
+      "C. Providing specialized dementia training to staff",
+      "D. Restraining the resident physically"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "When addressing behavioral symptoms in residents with dementia, it is essential to implement person-centered care approaches (F742) and provide specialized dementia training to staff to effectively manage the situation without resorting to sedative medications or physical restraints, which can be detrimental to the resident's well-being.",
+    "regulations": [
+      {
+        "id": "483.40",
+        "section": "F742",
+        "title": "Treatment/Services for Mental/Psychosocial Concerns"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "What is the significance of COVID-19 vaccination requirements for staff in long-term care facilities?",
+    "choices": [
+      "A. Ensuring staff emotional well-being",
+      "B. Preventing the spread of infectious diseases",
+      "C. Fulfilling Behavioral Health Services regulations",
+      "D. Complying with dietary restrictions"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "COVID-19 vaccination requirements for staff in long-term care facilities are essential for preventing the spread of infectious diseases, including COVID-19. This aligns with the infection prevention and control regulations (483.80) that aim to maintain a safe environment for residents and staff.",
+    "regulations": [
+      {
+        "id": "483.80",
+        "section": "F880",
+        "title": "Infection Control"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Which of the following best practices promote the emotional and psychosocial well-being of residents in long-term care facilities?",
+    "choices": [
+      "A. Minimizing social interactions",
+      "B. Encouraging personalized activities and hobbies",
+      "C. Restricting access to outdoor areas",
+      "D. Avoiding discussions about past memories"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Promoting personalized activities and hobbies for residents in long-term care facilities enhances their emotional and psychosocial well-being (F742). Minimizing social interactions, restricting access to outdoor areas, and avoiding discussions about past memories can have negative impacts on residents' quality of life and mental health.",
+    "regulations": [
+      {
+        "id": "483.40",
+        "section": "F742",
+        "title": "Treatment/Services for Mental/Psychosocial Concerns"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: During a survey of a long-term care facility, you discover an anonymous complaint alleging staff neglect of residents. What should be your immediate next step as a surveyor?",
+    "choices": [
+      "A. Conduct interviews with the accused staff members",
+      "B. Document the complaint and initiate an investigation",
+      "C. Ignore the complaint as it is anonymous",
+      "D. Inform the facility administrator privately"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "As per 42 CFR 483.85, facilities must have a system for anonymous reporting of complaints. Surveyors are required to take anonymous complaints seriously, document them, and initiate an investigation to verify the allegations. Ignoring the complaint or bypassing the investigation process could lead to non-compliance with regulatory requirements.",
+    "regulations": [
+      {
+        "id": "483.85",
+        "section": "F865",
+        "title": "Compliance and Ethics Program; Disciplinary Mechanisms"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: While reviewing a facility's compliance and ethics program, you notice that staff training on resident rights is lacking. Which of the following deficiencies should you cite based on this observation?",
+    "choices": [
+      "A. Lack of quality assurance measures",
+      "B. Failure to ensure effective communication",
+      "C. Non-compliance with training requirements",
+      "D. Inadequate disciplinary mechanisms"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "Training staff on resident rights is a key component of regulatory compliance (42 CFR 483.95). The deficiency relates to both ineffective communication, as staff must be trained to communicate effectively with residents regarding their rights, and non-compliance with training requirements. Ensuring staff are adequately trained is essential for maintaining resident safety and rights.",
+    "regulations": [
+      {
+        "id": "483.95",
+        "section": "F865",
+        "title": "Training Requirements"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "In the context of a compliance and ethics program, what is the purpose of having disciplinary mechanisms in place within a long-term care facility?",
+    "choices": [
+      "A. To penalize staff for minor infractions",
+      "B. To deter unethical conduct and ensure compliance with regulations",
+      "C. To create a culture of fear among employees",
+      "D. To eliminate the need for staff training"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Disciplinary mechanisms are crucial components of a compliance and ethics program to deter unethical conduct and promote adherence to regulations (42 CFR 483.85). The primary goal is to maintain a culture of accountability and integrity within the facility, not to instill fear but to encourage ethical behavior and ensure resident safety.",
+    "regulations": [
+      {
+        "id": "483.85",
+        "section": "F865",
+        "title": "Compliance and Ethics Program; Disciplinary Mechanisms"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "What type of staff training is essential to ensure effective communication within a long-term care facility?",
+    "choices": [
+      "A. Training on resident assessment protocols",
+      "B. Training on dietary restrictions for residents",
+      "C. Training on emergency response procedures",
+      "D. Training on cultural competence and sensitivity"
+    ],
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "Training on cultural competence and sensitivity is essential to ensure effective communication with residents from diverse backgrounds, meeting their individual needs and preferences. Effective communication is a key aspect of resident-centered care, promoting quality of life and resident satisfaction.",
+    "regulations": [
+      {
+        "id": "483.95",
+        "section": "F865",
+        "title": "Training Requirements"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Why is quality assurance an integral part of staff training in a long-term care facility's compliance and ethics program?",
+    "choices": [
+      "A. To ensure staff receive regular performance evaluations",
+      "B. To identify areas for improvement and ensure compliance",
+      "C. To implement harsh disciplinary actions for non-compliance",
+      "D. To eliminate the need for anonymous reporting"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Quality assurance in staff training helps identify areas needing improvement, ensuring compliance with regulations and ethical standards. It allows facilities to assess the effectiveness of their training programs, address deficiencies, and maintain a high standard of care. Regular evaluations contribute to continuous quality improvement and resident safety.",
+    "regulations": [
+      {
+        "id": "483.95",
+        "section": "F865",
+        "title": "Training Requirements"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: During a survey of a long-term care facility, you notice a staff member improperly removing their gloves after providing care to a resident. What action should you take as a surveyor?",
+    "choices": [
+      "A. Immediately correct the staff member on the proper glove removal technique",
+      "B. Document the observation and discuss it with the facility's infection control coordinator",
+      "C. Ignore the incident as it is a minor infraction",
+      "D. Report the staff member to the facility administrator"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Proper glove removal is crucial in preventing the spread of infections (F880). As a surveyor, your role is to document observations and address them appropriately. Discussing the issue with the facility's infection control coordinator allows for corrective action without directly intervening in staff training.",
+    "regulations": [
+      {
+        "id": "483.80",
+        "section": "F880",
+        "title": "Infection Control"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "During a survey of a long-term care facility, you review the facility's antibiotic stewardship program. Which practices would indicate effective antibiotic stewardship?",
+    "choices": [
+      "A. Prescribing antibiotics for viral infections",
+      "B. Routinely administering broad-spectrum antibiotics",
+      "C. Conducting regular antibiotic use reviews",
+      "D. Allowing self-administration of antibiotics by residents"
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Effective antibiotic stewardship programs involve regular antibiotic use reviews to optimize prescribing practices, reduce resistance, and improve resident outcomes (F881). Practices like prescribing antibiotics for viral infections or allowing self-administration can contribute to antibiotic misuse and resistance.",
+    "regulations": [
+      {
+        "id": "483.80",
+        "section": "F881",
+        "title": "Antibiotic Stewardship"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "Scenario: While inspecting a resident's room in a long-term care facility, you notice a sign indicating the use of transmission-based precautions. What should you do next as a surveyor?",
+    "choices": [
+      "A. Request a meeting with the facility's infection control team",
+      "B. Review the resident's medical records to understand the reason for precautions",
+      "C. Remove the sign to avoid causing alarm to other residents",
+      "D. Proceed with the room inspection without addressing the precautions"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Transmission-based precautions are implemented for residents with specific infections to prevent the spread of pathogens (F880). As a surveyor, reviewing the resident's medical records helps you understand the rationale behind the precautions and assess the facility's compliance with infection control protocols.",
+    "regulations": [
+      {
+        "id": "483.80",
+        "section": "F880",
+        "title": "Infection Control"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "During a survey of a long-term care facility, you inquire about the process for arranging emergency dental services for residents. What would be a compliant procedure?",
+    "choices": [
+      "A. Requiring residents to arrange emergency dental services independently",
+      "B. Having a standing order for all residents to visit the emergency room for dental issues",
+      "C. Consulting with the facility's medical director before arranging emergency dental care",
+      "D. Ignoring emergency dental requests as they are not considered urgent"
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Emergency dental services in long-term care facilities should be arranged promptly and involve appropriate medical consultation (F842). Requiring residents to arrange services independently or dismissing emergency requests goes against the facility's responsibility for resident care and access to necessary services.",
+    "regulations": [
+      {
+        "id": "483.55",
+        "section": "F842",
+        "title": "Dental Services"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: During a survey, you observe a staff member assisting a resident with dental care without wearing appropriate PPE. What is the correct course of action as a surveyor?",
+    "choices": [
+      "A. Immediately stop the care and reprimand the staff member",
+      "B. Document the observation and discuss it with the facility's infection control coordinator",
+      "C. Assist the staff member in providing care to the resident",
+      "D. Ignore the incident as it does not directly impact survey findings"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Proper PPE use is essential in preventing the transmission of infections during care provision (F880). As a surveyor, documenting and discussing the observation with the facility's infection control coordinator allows for corrective action without direct intervention, ensuring staff adherence to infection control protocols.",
+    "regulations": [
+      {
+        "id": "483.80",
+        "section": "F880",
+        "title": "Infection Control"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: During a facility tour, you notice a foul odor in the resident's bathroom area. What should you do as a surveyor?",
+    "choices": [
+      "A. Ignore the odor as it may be temporary",
+      "B. Ask staff about their cleaning procedures",
+      "C. Notify the facility management immediately",
+      "D. Proceed with the tour without addressing the issue"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "As a surveyor assessing the physical environment, it is crucial to address any signs of poor sanitation or hygiene promptly. Notifying the facility management (F880) allows for immediate corrective action to ensure resident safety and comfort. Additionally, asking about cleaning procedures (F882) helps gather information for a comprehensive evaluation of the facility's compliance.",
+    "regulations": [
+      {
+        "id": "483.90",
+        "section": "F880",
+        "title": "Physical Environment"
+      },
+      {
+        "id": "483.90",
+        "section": "F882",
+        "title": "Housekeeping and Maintenance"
+      }
+    ]
+  },
+  {
+    "ksa": "E",
+    "question": "Scenario: You observe pest droppings in a resident's room during a survey. What regulatory requirements should the facility meet regarding pest control?",
+    "choices": [
+      "A. Monthly self-inspections for pests",
+      "B. Immediate pest extermination upon sighting",
+      "C. Keeping records of pest control measures",
+      "D. Informing residents about pest sightings"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "Pest control regulations (F883) require facilities to promptly address pest sightings to protect residents from health hazards. Keeping records of pest control measures enhances accountability and ensures ongoing compliance. Immediate pest extermination is crucial to maintaining a safe and sanitary environment for residents.",
+    "regulations": [
+      {
+        "id": "483.90",
+        "section": "F883",
+        "title": "Pest Control"
+      }
+    ]
+  },
+  {
+    "ksa": "F",
+    "question": "Scenario: A resident requires dialysis treatment three times a week at the facility. What should the facility ensure to provide quality care for this resident?",
+    "choices": [
+      "A. Regular monitoring of dialysis equipment",
+      "B. Adequate training for staff on dialysis procedures",
+      "C. Coordination with an external dialysis center",
+      "D. Ensuring dialysis sessions are on time"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "Quality of care for residents requiring dialysis (F684) involves ensuring staff are well-trained in dialysis procedures to provide safe and effective treatment. Additionally, coordination with external dialysis centers is essential to guarantee continuity of care and adherence to prescribed treatment protocols.",
+    "regulations": [
+      {
+        "id": "483.25",
+        "section": "F684",
+        "title": "Specialized Rehabilitative Services"
+      }
+    ]
+  },
+  {
+    "ksa": "G",
+    "question": "Scenario: A resident with a stage 2 pressure ulcer is experiencing pain. What interventions should the facility implement for effective pain management?",
+    "choices": [
+      "A. Administering pain medication as needed",
+      "B. Applying appropriate wound dressings",
+      "C. Monitoring the resident's pain levels regularly",
+      "D. Providing educational materials on pressure ulcer prevention"
+    ],
+    "correct_answers": [
+      "A",
+      "C"
+    ],
+    "explanation": "Effective pain management (F309) for residents with pressure ulcers involves regular monitoring of pain levels to ensure timely administration of pain relief medication. By assessing and addressing pain promptly, facilities can enhance resident comfort and promote healing. Monitoring pain levels is crucial for evaluating the effectiveness of the pain management plan.",
+    "regulations": [
+      {
+        "id": "483.25",
+        "section": "F309",
+        "title": "Pain Management"
+      }
+    ]
+  },
+  {
+    "ksa": "K",
+    "question": "Scenario: A facility's water supply is temporarily disrupted due to maintenance work. What should the facility do to ensure resident safety and comfort during this period?",
+    "choices": [
+      "A. Provide bottled water for residents' consumption",
+      "B. Notify residents about the temporary water disruption",
+      "C. Develop a contingency plan for water supply emergencies",
+      "D. Resume regular water supply without informing residents"
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "During water supply disruptions, facilities must prioritize resident safety and well-being by providing alternative water sources, such as bottled water, to ensure hydration needs are met. Residents should be informed about the disruption (F926) and any temporary measures in place to address the situation. Developing a contingency plan for water emergencies is essential for preparedness and regulatory compliance.",
+    "regulations": [
+      {
+        "id": "483.90",
+        "section": "F926",
+        "title": "Emergency Preparedness"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: During a survey of a long-term care facility, you notice that the noise levels in the common areas exceed recommended limits, causing discomfort to residents. What action should you take as a surveyor?",
+    "choices": [
+      "A. Document the observation and continue with the survey",
+      "B. Inform the facility management of the noise levels and recommend measures to reduce it",
+      "C. Include the excessive noise levels in the deficiency report",
+      "D. Request residents' feedback on the noise levels"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "Excessive noise levels can impact residents' well-being and quality of life. As a surveyor, it is important to address this concern by informing the facility management of the issue and recommending solutions to mitigate the noise levels. Additionally, citing the excessive noise levels in the deficiency report aligns with regulation 42 CFR 483.90 regarding the physical environment.",
+    "regulations": [
+      {
+        "id": "483.90",
+        "section": "F923",
+        "title": "Physical Environment"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: While inspecting the bathroom facilities in a long-term care facility, you notice that some resident bathrooms lack grab bars and non-slip surfaces. What does this observation indicate?",
+    "choices": [
+      "A. Lack of compliance with safety standards",
+      "B. Aesthetic concerns only",
+      "C. Cost-cutting measures",
+      "D. Resident preference for minimalistic design"
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "The absence of grab bars and non-slip surfaces in resident bathrooms indicates a lack of compliance with safety standards, specifically related to regulation 42 CFR 483.90, which requires facilities to ensure a safe environment for residents. This deficiency could pose risks to resident safety and well-being.",
+    "regulations": [
+      {
+        "id": "483.90",
+        "section": "F925",
+        "title": "Physical Environment"
+      }
+    ]
+  },
+  {
+    "ksa": "J",
+    "question": "Scenario: During a survey, you observe that the temperature in the facility is consistently below the comfortable range specified for long-term care settings. What should you do as a surveyor?",
+    "choices": [
+      "A. Inform the facility staff about the temperature concern",
+      "B. Include the temperature issue in the deficiency report",
+      "C. Verify if the facility has a policy on temperature control",
+      "D. Ignore the temperature concern if no residents have complained"
+    ],
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "Maintaining a comfortable temperature is essential for residents' well-being and is a requirement under regulation 42 CFR 483.90. As a surveyor, it is crucial to address concerns regarding temperature by informing the facility staff, including the issue in the deficiency report, and ensuring that corrective actions are taken to comply with the regulations.",
+    "regulations": [
+      {
+        "id": "483.90",
+        "section": "F926",
+        "title": "Physical Environment"
+      }
+    ]
+  },
+  {
+    "ksa": "F",
+    "question": "In the context of Administration regulations, what is the importance of disclosure of ownership information in a long-term care facility?",
+    "choices": [
+      "A. Ensuring transparency and accountability",
+      "B. Attracting potential residents",
+      "C. Avoiding scrutiny from regulatory bodies",
+      "D. Protecting sensitive business information"
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Disclosure of ownership information in a long-term care facility is crucial for ensuring transparency and accountability, aligning with regulation 42 CFR 483.70 related to Administration. By disclosing ownership details, the facility promotes trust and allows stakeholders to assess potential conflicts of interest or financial stability.",
+    "regulations": [
+      {
+        "id": "483.70",
+        "section": "F880",
+        "title": "Disclosure of Ownership"
+      }
+    ]
+  },
+  {
+    "ksa": "H",
+    "question": "What role does the governing body play in ensuring quality care in a long-term care facility?",
+    "choices": [
+      "A. Establishing staff qualifications",
+      "B. Directly providing resident care",
+      "C. Overseeing facility operations",
+      "D. Setting individual resident care plans"
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "The governing body of a long-term care facility is responsible for overseeing facility operations, which includes governance, financial stability, and ensuring compliance with regulations like 42 CFR 483.70. While the governing body may set overall policies and quality indicators, individual care plans are typically developed based on resident assessments by qualified staff.",
+    "regulations": [
+      {
+        "id": "483.70",
+        "section": "F895",
+        "title": "Governing Body"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: A long-term care facility decides to discharge a resident due to behavioral issues that disrupt other residents' peace. The resident's family is unaware of this decision. What action should the facility take to comply with regulations?",
+    "choices": [
+      "A. Immediately discharge the resident to prevent further disruption",
+      "B. Provide a written notice of discharge to the resident's family at least 30 days before the planned discharge date",
+      "C. Transfer the resident to a psychiatric facility without informing the family",
+      "D. Discuss the discharge decision with staff only"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Under 42 CFR 483.15, facilities must provide written notice to the resident and their family at least 30 days before a planned discharge. This regulation aims to protect residents' rights and ensure proper discharge planning, including the opportunity to appeal the decision if needed.",
+    "regulations": [
+      {
+        "id": "483.15",
+        "section": "F164",
+        "title": "Discharge Planning"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "Which of the following are examples of abuse prevention training requirements for long-term care facility staff?",
+    "choices": [
+      "A. Annual training on infection control measures",
+      "B. Biennial training on resident rights",
+      "C. Routine training on emergency preparedness",
+      "D. Training on recognizing and reporting signs of elder abuse"
+    ],
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "Abuse prevention training for staff, including recognizing and reporting signs of elder abuse, is crucial to ensuring resident safety and well-being. Failing to provide this training may lead to deficiencies related to resident protection and staff competency.",
+    "regulations": [
+      {
+        "id": "483.95",
+        "section": "F609",
+        "title": "Training Requirements"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: A resident with complex medical needs requires transfer to a higher level of care. What must the long-term care facility ensure before initiating the transfer?",
+    "choices": [
+      "A. Arrange for the resident's safe transfer and adequate notice to the receiving facility",
+      "B. Notify the family after the transfer is complete",
+      "C. Transfer the resident without any prior notice",
+      "D. Transfer the resident during non-working hours to avoid disruptions"
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Prior to transferring a resident to another facility, long-term care facilities must ensure the resident's safe transfer, provide adequate notice to the receiving facility about the resident's needs, medications, and care requirements. This process is essential for continuity of care and resident safety.",
+    "regulations": [
+      {
+        "id": "483.15",
+        "section": "F155",
+        "title": "Transfer Procedures"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "Which of the following topics are included in quality assurance training for long-term care facility staff?",
+    "choices": [
+      "A. Basic life support techniques",
+      "B. Monitoring and improving the quality of care and services provided",
+      "C. Resident rights and confidentiality",
+      "D. Proper hand hygiene practices"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Quality assurance training for staff involves monitoring and improving the quality of care and services provided to residents. This training ensures that facilities maintain high standards of care delivery and continuously strive for quality improvement.",
+    "regulations": [
+      {
+        "id": "483.95",
+        "section": "F658",
+        "title": "Quality Assurance and Performance Improvement"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "What must long-term care facilities consider when developing infection control training programs for staff?",
+    "choices": [
+      "A. Proper hand hygiene practices and use of personal protective equipment",
+      "B. Resident discharge planning procedures",
+      "C. Dietary restrictions for diabetic residents",
+      "D. Maintenance of outdoor garden spaces"
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Infection control training programs for staff should cover topics such as proper hand hygiene practices, use of personal protective equipment, and other measures to prevent the spread of infections within the facility. Compliance with these training requirements is crucial for maintaining a safe and hygienic environment for residents.",
+    "regulations": [
+      {
+        "id": "483.95",
+        "section": "F880",
+        "title": "Infection Control"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: During a survey, you review the facility's staffing schedule and notice that there is no registered nurse (RN) present on the night shift. What action should you take as a surveyor?",
+    "choices": [
+      "A. Cite the facility for inadequate RN coverage",
+      "B. Verify if the facility has a waiver for RN coverage during specific hours",
+      "C. Ignore the lack of RN coverage if the facility has licensed practical nurses (LPNs) present",
+      "D. Conduct interviews with staff to understand the reasons for the RN absence"
+    ],
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "According to 42 CFR 483.35, a facility must have an RN on duty for at least 8 consecutive hours a day, 7 days a week. If there is no RN coverage, it constitutes a deficiency. However, facilities can apply for waivers for specific hours. As a surveyor, it is essential to verify the waiver status before citing deficiencies.",
+    "regulations": [
+      {
+        "id": "483.35",
+        "section": "F600",
+        "title": "Nursing Services"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: While observing a nurse aide assisting a resident with incontinence care, you notice that the aide does not wear gloves during the procedure. What action should you take based on this observation?",
+    "choices": [
+      "A. Cite the facility for nurse aide incompetence",
+      "B. Educate the nurse aide about proper infection control practices",
+      "C. Document the observation as a potential infection control deficiency",
+      "D. Ignore the lack of glove usage if hand hygiene is performed before and after care"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "F880 mandates facilities to follow infection control practices to prevent the spread of infections. Not wearing gloves during incontinence care poses a risk of infection transmission. As a surveyor, it is crucial to educate and document deficiencies related to infection control practices for resident safety.",
+    "regulations": [
+      {
+        "id": "483.35",
+        "section": "F880",
+        "title": "Infection Control"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "Scenario: During a survey, you review the facility's in-service education records and notice that nurse aides have not received training on colostomy and ileostomy care. What deficiency should you consider citing?",
+    "choices": [
+      "A. Lack of training on general resident care",
+      "B. Failure to provide specific training on colostomy and ileostomy care",
+      "C. Insufficient documentation of in-service education sessions",
+      "D. Inadequate staffing levels for nurse aide training"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "F725 requires facilities to provide appropriate training to nurse aides for specialized services like colostomy and ileostomy care. The lack of training specifically on these topics constitutes a deficiency that impacts the quality of care provided to residents with ostomies.",
+    "regulations": [
+      {
+        "id": "483.35",
+        "section": "F725",
+        "title": "Quality of Care"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "Scenario: During a survey, you come across incident reports documenting multiple falls of residents in a short period. What action should you take to address this pattern of accidents?",
+    "choices": [
+      "A. Interview the facility administrator about the falls",
+      "B. Review the facility's policies and procedures on fall prevention",
+      "C. Recommend additional staff training on resident mobility",
+      "D. Analyze the root causes of the falls and potential system failures"
+    ],
+    "correct_answers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "F689 requires facilities to ensure residents remain free from accidents. In the case of frequent falls, surveyors should investigate the root causes, review policies, recommend additional training, and analyze potential system failures to prevent further accidents. This comprehensive approach addresses resident safety and quality of care.",
+    "regulations": [
+      {
+        "id": "483.25",
+        "section": "F689",
+        "title": "Quality of Care"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: While reviewing care plans, you notice that residents with known incontinence issues do not have individualized toileting schedules. What deficiency should you consider citing based on this observation?",
+    "choices": [
+      "A. Lack of registered nurse (RN) oversight",
+      "B. Failure to address residents' individual needs",
+      "C. Inadequate documentation of incontinence care",
+      "D. Insufficient staff training on toileting techniques"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "F684 requires facilities to provide individualized care that meets residents' specific needs, including toileting schedules for those with incontinence. The absence of individualized toileting schedules reflects a deficiency in addressing residents' unique requirements and may lead to compromised quality of care.",
+    "regulations": [
+      {
+        "id": "483.25",
+        "section": "F684",
+        "title": "Quality of Care"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: During a survey of a long-term care facility, you discover that a Nurse Practitioner (NP) is providing services without appropriate supervision by a physician. What action should you take as a surveyor?",
+    "choices": [
+      "A. Document the finding and include it in the survey report",
+      "B. Immediately cite the facility for non-compliance",
+      "C. Confront the NP directly about the lack of supervision",
+      "D. Inform the facility's administrator without further investigation"
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "According to 42 CFR 483.30, NP services in a long-term care facility must be supervised by a physician. As a surveyor, the appropriate action is to document the finding and include it in the survey report for further review and potential citation if necessary (F-tag: F758). Direct confrontation or immediate citation without due process is not the recommended approach.",
+    "regulations": [
+      {
+        "id": "483.30",
+        "section": "F758",
+        "title": "Physician Services"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "During a survey, you learn that the facility occasionally utilizes an alternate physician to provide services when the primary attending physician is unavailable. Which statements about alternate physician participation are accurate?",
+    "choices": [
+      "A. The alternate physician must have the same specialty as the primary attending physician",
+      "B. The facility should maintain documentation of when the alternate physician provides services",
+      "C. The alternate physician must be familiar with the resident's medical history and care needs",
+      "D. The alternate physician's involvement does not need to be communicated to the residents"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "According to 42 CFR 483.30, facilities can use alternate physicians when the primary attending physician is unavailable. It is essential that the facility maintains documentation of when the alternate physician provides services (F-tag: F757) and ensures that the alternate physician is familiar with the resident's medical history and care needs to maintain continuity of care.",
+    "regulations": [
+      {
+        "id": "483.30",
+        "section": "F757",
+        "title": "Physician Services"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "When evaluating a long-term care facility's Quality Assurance and Performance Improvement (QAPI) program, which of the following components should be considered?",
+    "choices": [
+      "A. Frequency of staff meetings",
+      "B. Resident satisfaction surveys",
+      "C. Number of beds in the facility",
+      "D. Identification of performance improvement projects"
+    ],
+    "correct_answers": [
+      "B",
+      "D"
+    ],
+    "explanation": "Per 42 CFR 483.75, a comprehensive QAPI program should include the identification of performance improvement projects (F-tag: F865) and mechanisms to assess and improve resident care outcomes, such as resident satisfaction surveys. The frequency of staff meetings and the facility's size are not direct indicators of the effectiveness of the QAPI program.",
+    "regulations": [
+      {
+        "id": "483.75",
+        "section": "F865",
+        "title": "QAPI Program"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "Scenario: While reviewing a long-term care facility's Quality Assurance and Performance Improvement (QAPI) program, you notice that they have not initiated any performance improvement projects in the past year. What action should you take as a surveyor?",
+    "choices": [
+      "A. Request a list of potential improvement projects from the facility",
+      "B. Cite the facility for non-compliance immediately",
+      "C. Schedule a follow-up visit to monitor project initiation",
+      "D. Determine if there were valid reasons for not starting projects"
+    ],
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "According to 42 CFR 483.75, facilities are required to have ongoing performance improvement projects as part of their QAPI program (F-tag: F865). As a surveyor, the appropriate action is to investigate the reasons behind the lack of projects before considering citations. This approach allows for a more thorough assessment of the facility's QAPI program effectiveness.",
+    "regulations": [
+      {
+        "id": "483.75",
+        "section": "F865",
+        "title": "QAPI Program"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "When assessing a long-term care facility's physician supervision practices, what should be a key consideration?",
+    "choices": [
+      "A. Frequency of physician visits to the facility",
+      "B. Physician's personal hobbies and interests",
+      "C. Number of non-physician staff members in the facility",
+      "D. Facility's preferred method of communication with physicians"
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "42 CFR 483.30 requires that physicians provide services in accordance with acceptable standards of practice. One key aspect of this is the frequency of physician visits to the facility to ensure ongoing oversight of resident care (F-tag: F756). The physician's personal life or non-essential facility details are not direct factors in assessing physician supervision practices.",
+    "regulations": [
+      {
+        "id": "483.30",
+        "section": "F756",
+        "title": "Physician Services"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: A resident's family requests a transfer to another long-term care facility due to dissatisfaction with the current facility. What should the facility ensure regarding the transfer process?",
+    "choices": [
+      "A. Inform the family that transfers are not allowed",
+      "B. Facilitate the transfer promptly and without delay",
+      "C. Deny the transfer request to maintain census numbers",
+      "D. Delay the transfer until the resident's next physician visit"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "According to 42 CFR 483.15, residents have the right to request and receive transfers to other facilities. Facilities must ensure a prompt and timely transfer process to honor resident preferences and rights. Delaying or denying transfers based on census concerns is not in line with resident-centered care.",
+    "regulations": [
+      {
+        "id": "483.15",
+        "section": "F623",
+        "title": "Transfer and Discharge Rights"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "What is a key requirement for Medicare bed-hold policies under 483.15 regulations?",
+    "choices": [
+      "A. 10-day bed-hold period for temporary hospitalizations",
+      "B. 30-day bed-hold period for any reason",
+      "C. No bed-hold policy required for Medicare residents",
+      "D. Bed-hold policy decided by the facility at their discretion"
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Under 42 CFR 483.15, Medicare bed-hold policies mandate a 10-day bed-hold period for temporary hospitalizations. This provision ensures that residents can return to their facility without losing their bed or room, promoting continuity of care and stability for residents.",
+    "regulations": [
+      {
+        "id": "483.15",
+        "section": "F625",
+        "title": "Bed-Hold Policies"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "What is a critical component of effective discharge planning for nursing home residents?",
+    "choices": [
+      "A. Informing the resident of discharge on the day of departure",
+      "B. Excluding family input in the planning process",
+      "C. Discharging residents without a written notice",
+      "D. Involving the resident, family, and interdisciplinary team in the process"
+    ],
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "Effective discharge planning, as outlined in 42 CFR 483.15, requires the involvement of the resident, family members, and the interdisciplinary team. This collaborative approach ensures that the discharge plan meets the resident's needs, preferences, and rights, promoting continuity of care and successful transitions.",
+    "regulations": [
+      {
+        "id": "483.15",
+        "section": "F657",
+        "title": "Discharge Planning"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "Which of the following are key requirements for nurse aide training under 483.35 regulations? Select all that apply.",
+    "choices": [
+      "A. High school diploma required for all nurse aides",
+      "B. Completion of a state-approved training program",
+      "C. On-the-job training as the sole requirement",
+      "D. Annual in-service education on resident rights"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "42 CFR 483.35 mandates that nurse aides must complete a state-approved training program to ensure they possess the necessary knowledge and skills to provide quality care to residents. On-the-job training alone is not sufficient to meet federal requirements for nurse aide competency.",
+    "regulations": [
+      {
+        "id": "483.35",
+        "section": "F741",
+        "title": "Nurse Aide Training"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Which nursing services must be provided by or under the supervision of a registered nurse according to 483.35 regulations? Select all that apply.",
+    "choices": [
+      "A. Medication administration",
+      "B. Wound care management",
+      "C. Initial resident assessments",
+      "D. Social activity planning"
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Under 42 CFR 483.35, specific nursing services such as medication administration, wound care management, and initial resident assessments must be provided by or under the supervision of a registered nurse. These services require the expertise and oversight of a registered nurse to ensure resident safety and quality of care.",
+    "regulations": [
+      {
+        "id": "483.35",
+        "section": "F754",
+        "title": "Nursing Services"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: During a survey of a long-term care facility, you discover that residents are experiencing delays in receiving routine dental services. What action should you take as a surveyor?",
+    "choices": [
+      "A. Document the finding and move on to the next area of review",
+      "B. Interview the dental staff to understand the reasons for the delays",
+      "C. Discuss the delays with facility administrators and request a plan of correction",
+      "D. Ignore the issue as routine dental services are not critical for resident care"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "Delays in routine dental services can impact residents' overall health and well-being, violating regulations related to promptness of services (F550). As a surveyor, it is crucial to investigate the root causes of the delays by interviewing staff and then address the issue with facility leadership for corrective action.",
+    "regulations": [
+      {
+        "id": "483.50",
+        "section": "F550",
+        "title": "Laboratory, Radiology, and Other Diagnostic Services"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "In assessing a long-term care facility's radiology services, what qualifications should a surveyor look for in the facility's radiologist?",
+    "choices": [
+      "A. Certification in CPR",
+      "B. Experience in physical therapy",
+      "C. Proficiency in dietary planning",
+      "D. Board certification in radiology"
+    ],
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "Surveyors should ensure that radiologists providing services in long-term care facilities are appropriately qualified, which includes holding board certification in radiology. This requirement ensures that residents receive high-quality and reliable diagnostic services, aligning with regulatory expectations for radiology services (483.50).",
+    "regulations": [
+      {
+        "id": "483.50",
+        "section": "F550",
+        "title": "Laboratory, Radiology, and Other Diagnostic Services"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "During a survey, you find that the laboratory services at a facility are outsourced to an external provider. What should the facility ensure regarding the laboratory services under these circumstances?",
+    "choices": [
+      "A. Timely receipt and communication of lab results",
+      "B. Direct supervision of external lab technicians",
+      "C. Daily calibration of lab equipment",
+      "D. Weekly reporting of lab incidents"
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Even if laboratory services are outsourced, the facility remains responsible for ensuring timely receipt and communication of lab results to facilitate prompt resident care. This requirement falls under the regulations governing laboratory services (483.50) and the promptness of services (F550) in long-term care facilities.",
+    "regulations": [
+      {
+        "id": "483.50",
+        "section": "F550",
+        "title": "Laboratory, Radiology, and Other Diagnostic Services"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "During a survey, you observe that the facility does not have transportation arrangements for residents needing off-site radiology services. What deficiency should you cite related to this observation?",
+    "choices": [
+      "A. Lack of recreational activities",
+      "B. Failure to make necessary arrangements for off-site services",
+      "C. Inadequate dietary options",
+      "D. Insufficient staff training"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "The absence of transportation arrangements for residents needing off-site radiology services reflects a failure to ensure prompt access to necessary diagnostic services, as required by regulations related to laboratory and radiology services (483.50). Surveyors should cite this deficiency to prompt corrective action.",
+    "regulations": [
+      {
+        "id": "483.50",
+        "section": "F550",
+        "title": "Laboratory, Radiology, and Other Diagnostic Services"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "When surveying a long-term care facility's referral assistance process for dental services, what key aspect should a surveyor focus on?",
+    "choices": [
+      "A. Timeliness and appropriateness of referrals",
+      "B. Availability of cosmetic dentistry options",
+      "C. Staff qualifications in orthodontics",
+      "D. Frequency of dental check-ups"
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Surveyors should pay attention to the timeliness and appropriateness of referrals for dental services to ensure that residents receive necessary care in a timely manner. This aspect is crucial for resident health and well-being and aligns with the requirement for promptness of services under laboratory and radiology regulations (483.50).",
+    "regulations": [
+      {
+        "id": "483.55",
+        "section": "F554",
+        "title": "Dental Services"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: A resident in a long-term care facility exhibits signs of increasing agitation and aggression towards staff and other residents. As a surveyor, what action should you take?",
+    "choices": [
+      "A. Document the behavior and continue the survey",
+      "B. Interview the resident to understand the underlying causes",
+      "C. Recommend a change in the resident's medication regimen",
+      "D. Notify facility staff about the resident's behavior for further evaluation"
+    ],
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "As a surveyor, observing behavioral changes that may impact the well-being of residents is crucial. Failing to report concerning behaviors like agitation and aggression could lead to deficiencies in providing appropriate treatment (F740) and ensuring residents' emotional and psychosocial well-being (F741). Notifying facility staff allows for timely intervention and follow-up.",
+    "regulations": [
+      {
+        "id": "483.40",
+        "section": "F740",
+        "title": "Behavioral Health Services"
+      },
+      {
+        "id": "483.40",
+        "section": "F741",
+        "title": "Facility Assessment"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: An outbreak of a gastrointestinal illness is suspected in a long-term care facility. What infection prevention measures should the facility implement immediately?",
+    "choices": [
+      "A. Conduct a thorough environmental cleaning of all common areas",
+      "B. Place affected residents in isolation and use contact precautions",
+      "C. Increase the frequency of staff handwashing and use of personal protective equipment",
+      "D. Notify the local health department and initiate a facility-wide vaccination program"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "During an outbreak situation, prompt isolation procedures (F881) and enhanced infection prevention measures are crucial to prevent further spread of the illness within the facility. Placing affected residents in isolation with contact precautions and increasing staff hand hygiene compliance align with best practices for outbreak response.",
+    "regulations": [
+      {
+        "id": "483.80",
+        "section": "F881",
+        "title": "Infection Prevention & Control"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "Which of the following are essential components of a facility's infection prevention program according to regulations?",
+    "choices": [
+      "A. Providing annual infection prevention training to staff",
+      "B. Conducting regular audits of infection control practices",
+      "C. Implementing appropriate hand hygiene protocols for residents only",
+      "D. Ensuring isolation precautions are only used for known infections"
+    ],
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "An effective infection prevention program must include staff training (F880) and audits of infection control practices to identify areas for improvement and ensure compliance with infection prevention regulations. Hand hygiene protocols should apply to both staff and residents to minimize the risk of infections spreading within the facility.",
+    "regulations": [
+      {
+        "id": "483.80",
+        "section": "F880",
+        "title": "Infection Prevention & Control"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "Scenario: A resident in a long-term care facility is diagnosed with a mental health condition that requires specialized treatment. What should the facility ensure to meet the resident's needs?",
+    "choices": [
+      "A. Assigning the resident to a shared room for social interaction",
+      "B. Providing access to psychiatric consultations and services",
+      "C. Limiting the resident's outdoor activities to prevent disruptions",
+      "D. Developing an individualized care plan addressing the mental health condition"
+    ],
+    "correct_answers": [
+      "B",
+      "D"
+    ],
+    "explanation": "Residents with mental health conditions require specialized treatment and care to address their unique needs. Providing access to psychiatric consultations and services (F741) and developing individualized care plans that address the mental health condition are essential components of appropriate treatment and ensuring emotional and psychosocial well-being.",
+    "regulations": [
+      {
+        "id": "483.40",
+        "section": "F741",
+        "title": "Facility Assessment"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Which of the following actions are considered appropriate measures for managing residents with psychosocial adjustment difficulties in a long-term care facility?",
+    "choices": [
+      "A. Restraining residents to prevent disruptive behavior",
+      "B. Implementing person-centered care approaches",
+      "C. Providing emotional support and counseling services",
+      "D. Reducing staff presence to minimize interactions"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "Residents experiencing psychosocial adjustment difficulties require person-centered care approaches (F740) that prioritize their emotional and psychosocial well-being. Providing emotional support and counseling services can help residents cope with their difficulties and enhance their quality of life. Restraints should only be used as a last resort and under specific conditions to ensure resident safety.",
+    "regulations": [
+      {
+        "id": "483.40",
+        "section": "F740",
+        "title": "Treatment/Services for Mental/Psychosocial Concerns"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: A long-term care facility is considering admitting a resident with a history of aggressive behavior towards staff and other residents. What should the facility's admission policies consider in this situation?",
+    "choices": [
+      "A. Ensuring the resident's behavior is properly managed at all times",
+      "B. Prioritizing resident safety and the safety of others in the facility",
+      "C. Implementing additional security measures to prevent any incidents",
+      "D. Restricting the resident's movements within the facility"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Admission policies must prioritize resident safety and the safety of others in the facility (F812). Facilities should consider the resident's history of aggressive behavior and have proper protocols in place to manage such behaviors to ensure a safe environment for all residents and staff.",
+    "regulations": [
+      {
+        "id": "483.15",
+        "section": "F812",
+        "title": "Admission Transfer and Discharge Rights"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "Scenario: A resident in a long-term care facility is being transferred to a behavioral health unit for specialized care. What training requirements should staff in both facilities have to ensure a successful transfer?",
+    "choices": [
+      "A. Training on infection control practices",
+      "B. Training on managing behavioral health conditions",
+      "C. Training on effective communication with residents",
+      "D. Training on proper documentation of resident transfers"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "Staff in both facilities should have training on managing behavioral health conditions (F758) and effective communication with residents (F755) to ensure a successful transfer and provide appropriate care. This training helps in addressing the resident's specific needs and maintaining continuity of care during the transfer process.",
+    "regulations": [
+      {
+        "id": "483.95",
+        "section": "F758",
+        "title": "Behavioral Health Training"
+      },
+      {
+        "id": "483.95",
+        "section": "F755",
+        "title": "Communications Training"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Which of the following are examples of transfer procedures that must be followed when moving a resident from one long-term care facility to another?",
+    "choices": [
+      "A. Obtaining consent from the resident's family",
+      "B. Ensuring the receiving facility can meet the resident's needs",
+      "C. Providing a written notice to the resident about the transfer",
+      "D. Notifying the ombudsman after the transfer is completed"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "Transfer procedures require ensuring that the receiving facility can meet the resident's needs (F745) and providing a written notice to the resident about the transfer (F743). These procedures are crucial in maintaining the resident's well-being and ensuring continuity of care during the transfer process.",
+    "regulations": [
+      {
+        "id": "483.15",
+        "section": "F745",
+        "title": "Transfer and Readmission Policies"
+      },
+      {
+        "id": "483.15",
+        "section": "F743",
+        "title": "Resident Notices"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "Scenario: A resident in a long-term care facility is returning after a hospital stay. What infection control measures should the facility implement to prevent the spread of infections during the readmission process?",
+    "choices": [
+      "A. Conducting staff training on proper hand hygiene",
+      "B. Ensuring the resident is isolated from other residents upon return",
+      "C. Implementing environmental cleaning protocols in the resident's room",
+      "D. Monitoring the resident's vital signs continuously"
+    ],
+    "correct_answers": [
+      "A",
+      "C"
+    ],
+    "explanation": "The facility should implement infection control measures such as staff training on proper hand hygiene (F880) and environmental cleaning protocols in the resident's room (F881) to prevent the spread of infections during the readmission process. These measures are essential to maintain a safe and sanitary environment for all residents.",
+    "regulations": [
+      {
+        "id": "483.95",
+        "section": "F880",
+        "title": "Infection Control Training"
+      },
+      {
+        "id": "483.95",
+        "section": "F881",
+        "title": "Infection Control"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "What is an important consideration for surveyors when assessing a long-term care facility's admission policies and procedures?",
+    "choices": [
+      "A. Ensuring the facility follows federal regulations on admissions",
+      "B. Reviewing the facility's financial records related to admissions",
+      "C. Interviewing current residents about their admission experience",
+      "D. Requesting copies of staff training certificates on admission policies"
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Surveyors should ensure that the facility follows federal regulations on admissions (F880) to guarantee that residents are admitted appropriately and their rights are protected. This assessment helps in identifying any deficiencies in the facility's admission process and ensuring compliance with regulatory requirements.",
+    "regulations": [
+      {
+        "id": "483.15",
+        "section": "F880",
+        "title": "Admission Transfer and Discharge Rights"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: A resident's family member expresses concerns about the quality of care during a meeting with the facility administrator. As a surveyor, what is your appropriate response?",
+    "choices": [
+      "A. Advise the family member to submit a written complaint directly to the state survey agency",
+      "B. Document the concern and inform the facility administrator that a grievance has been filed",
+      "C. Provide the family member with information on how to file a grievance with the facility",
+      "D. Disregard the family member's concerns as they are not directly related to the survey"
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "As a surveyor, it is essential to ensure that residents and their families are aware of their rights and how to address grievances. Providing information on filing a grievance aligns with Resident Rights regulations (483.10) and supports a resident-centered approach to care.",
+    "regulations": [
+      {
+        "id": "483.10",
+        "section": "F163",
+        "title": "Grievances"
+      }
+    ]
+  },
+  {
+    "ksa": "J",
+    "question": "A resident in a long-term care facility refuses to participate in a group activity citing a preference for solitude. How should the facility respect the resident's self-determination?",
+    "choices": [
+      "A. Require the resident to participate for socialization purposes",
+      "B. Document the resident's preference and offer alternative individual activities",
+      "C. Encourage other residents to persuade the resident to join the group activity",
+      "D. Inform the resident that refusal to participate will result in disciplinary action"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Respecting a resident's right to self-determination is crucial in long-term care facilities. Documenting the resident's preference and providing alternative activities upholds their autonomy and is in line with the Resident Rights regulations (483.10). Pressuring the resident to participate or threatening disciplinary action would violate their rights.",
+    "regulations": [
+      {
+        "id": "483.10",
+        "section": "F550",
+        "title": "Self-Determination"
+      }
+    ]
+  },
+  {
+    "ksa": "E",
+    "question": "What is one of the primary responsibilities of an infection preventionist in a long-term care facility?",
+    "choices": [
+      "A. Overseeing resident dietary requirements",
+      "B. Managing the facility's financial records",
+      "C. Conducting regular hand hygiene audits",
+      "D. Coordinating resident recreational activities"
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Infection preventionists play a crucial role in preventing and controlling infections within long-term care facilities. Conducting regular hand hygiene audits is a key responsibility that aligns with the Infection Prevention and Control regulations (483.80) to maintain a safe environment for residents and staff.",
+    "regulations": [
+      {
+        "id": "483.80",
+        "section": "F880",
+        "title": "Infection Prevention and Control"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "Which staff members in a long-term care facility are required to use appropriate personal protective equipment (PPE) according to regulations?",
+    "choices": [
+      "A. Only nursing staff during direct resident care",
+      "B. Housekeeping staff during room cleaning",
+      "C. Dietary staff in the kitchen area",
+      "D. All staff as necessary based on their job duties"
+    ],
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "Regulations mandate that all staff members in a long-term care facility should use appropriate PPE as necessary based on their job duties to prevent the spread of infections (483.80). This requirement ensures the safety of residents, staff, and visitors within the facility.",
+    "regulations": [
+      {
+        "id": "483.80",
+        "section": "F880",
+        "title": "Infection Prevention and Control"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: A resident's designated representative requests a copy of the resident's medical records for review. What action should the facility take in compliance with regulations?",
+    "choices": [
+      "A. Deny the representative's request due to confidentiality concerns",
+      "B. Provide the representative with a redacted copy of the medical records",
+      "C. Inform the representative that they are not entitled to access the records",
+      "D. Grant the representative access to the complete medical records"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "It is crucial for facilities to comply with regulations regarding resident rights to access their medical records through designated representatives (483.10). Providing a redacted copy of the medical records ensures confidentiality while fulfilling the representative's request for information.",
+    "regulations": [
+      {
+        "id": "483.10",
+        "section": "F157",
+        "title": "Notice of Rights and Services"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: During a survey of a long-term care facility, you observe a resident exhibiting signs of distress and agitation in the dementia care unit. What immediate action should you take as a surveyor?",
+    "choices": [
+      "A. Approach the resident to provide comfort and support",
+      "B. Notify the facility's administrator about the resident's behavior",
+      "C. Observe the staff's response and interactions with the resident",
+      "D. Interview other residents to gather more information"
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "As a surveyor, it is essential to observe the staff's response and interactions with residents, especially in the context of dementia care. This allows you to assess the facility's ability to appropriately manage residents' behavioral symptoms and provide person-centered care (F743). By observing the staff, you can evaluate if they are following the regulations and best practices for dementia care.",
+    "regulations": [
+      {
+        "id": "483.40",
+        "section": "F743",
+        "title": "Behavioral Health Services"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: A resident in a long-term care facility is participating in mental health rehabilitation activities. What knowledge should facility staff demonstrate to ensure appropriate treatment for the resident?",
+    "choices": [
+      "A. Understanding of the resident's individualized care plan",
+      "B. Ability to administer medication without oversight",
+      "C. Familiarity with general caregiving principles",
+      "D. Awareness of facility policies on staff breaks"
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Facility staff involved in mental health rehabilitation must demonstrate an understanding of the resident's individualized care plan, as outlined in F740. This knowledge ensures that the resident receives appropriate and personalized treatment in line with their specific mental health needs.",
+    "regulations": [
+      {
+        "id": "483.40",
+        "section": "F740",
+        "title": "Behavioral Health Services"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "What are the key elements of appropriate treatment for residents with mental health needs in a long-term care facility?",
+    "choices": [
+      "A. Strict isolation to prevent interaction with others",
+      "B. Person-centered care tailored to individual needs",
+      "C. Limited access to mental health professionals",
+      "D. Use of physical restraints for behavioral management"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Appropriate treatment for residents with mental health needs in a long-term care facility should focus on person-centered care (F745) that is tailored to individual needs and preferences. This approach promotes the resident's well-being, dignity, and quality of life while addressing their mental health concerns.",
+    "regulations": [
+      {
+        "id": "483.40",
+        "section": "F745",
+        "title": "Behavioral Health Services"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "When conducting staff screening in a long-term care facility, what factors should surveyors consider to ensure compliance with regulations?",
+    "choices": [
+      "A. Staff members' preferred work schedules",
+      "B. Criminal background checks and references",
+      "C. Personal opinions about resident care",
+      "D. Verification of staff qualifications and credentials"
+    ],
+    "correct_answers": [
+      "B",
+      "D"
+    ],
+    "explanation": "During staff screening, surveyors should consider conducting criminal background checks and verifying staff qualifications and credentials (F884) to ensure that only qualified individuals are hired to provide care to residents. These measures help maintain resident safety and well-being by preventing unqualified or potentially harmful individuals from working in the facility.",
+    "regulations": [
+      {
+        "id": "483.12",
+        "section": "F884",
+        "title": "Personnel Qualifications"
+      }
+    ]
+  },
+  {
+    "ksa": "E",
+    "question": "What are the reporting requirements for investigation of allegations of abuse or neglect in a long-term care facility?",
+    "choices": [
+      "A. Only report to the facility's management team",
+      "B. Report to the state survey agency within 24 hours",
+      "C. Report to the Ombudsman program for investigation",
+      "D. Keep the investigation findings confidential"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "When investigating allegations of abuse or neglect, it is crucial to report to the state survey agency within 24 hours and to the Ombudsman program for further investigation (F609). Reporting to these entities ensures that incidents are promptly addressed, investigated thoroughly, and necessary actions are taken to protect residents from harm.",
+    "regulations": [
+      {
+        "id": "483.12",
+        "section": "F609",
+        "title": "Reporting of Allegations"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: During a facility tour, you overhear a conversation between a resident and their family member. The family member is expressing concerns about the resident's care and wants to discuss it further. What action should you take as a surveyor?",
+    "choices": [
+      "A. Advise the family member to speak directly with the resident's nurse",
+      "B. Offer to facilitate a meeting between the family member, resident, and facility staff",
+      "C. Politely excuse yourself from the conversation to maintain surveyor objectivity",
+      "D. Ask the family member to submit a written complaint to the facility's administration"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "As a surveyor, it is important to maintain objectivity and avoid directly involving yourself in resident/family concerns to uphold surveyor integrity (F519). However, offering to facilitate a meeting between the family member, resident, and facility staff promotes communication and resolution, aligning with resident rights regulations. This approach supports open dialogue while respecting the surveyor's role.",
+    "regulations": [
+      {
+        "id": "483.10",
+        "section": "F519",
+        "title": "Resident/Family Group Meetings"
+      },
+      {
+        "id": "483.10",
+        "section": "F580",
+        "title": "Resident/Family Councils"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: During a routine inspection, you discover that a long-term care facility has not conducted staff background checks for several newly hired employees. What should be your immediate action as a surveyor?",
+    "choices": [
+      "A. Document the finding and include it in the survey report",
+      "B. Immediately request the termination of those employees",
+      "C. Conduct the staff screening yourself to ensure compliance",
+      "D. Advise the facility on the importance of staff screening"
+    ],
+    "correct_answers": [
+      "A",
+      "D"
+    ],
+    "explanation": "As a surveyor, it is important to document any non-compliance with staff screening requirements (F607) and include it in the survey report for further investigation. Additionally, advising the facility on the importance of staff screening aligns with promoting regulatory compliance and resident safety.",
+    "regulations": [
+      {
+        "id": "483.12",
+        "section": "F607",
+        "title": "Staff Treatment"
+      },
+      {
+        "id": "483.12",
+        "section": "F609",
+        "title": "Staffing"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "Scenario: A resident alleges that a staff member has been mishandling their personal belongings. What steps should be taken by the facility as part of the investigation?",
+    "choices": [
+      "A. Immediately terminate the accused staff member",
+      "B. Notify the resident's family about the allegation",
+      "C. Conduct a thorough investigation following established protocols",
+      "D. Ignore the allegation if there is no concrete evidence"
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Facilities must investigate all allegations of resident mistreatment (F609) following established protocols to protect resident rights. Terminating staff without a proper investigation or ignoring the allegation can lead to further violations and compromise resident safety.",
+    "regulations": [
+      {
+        "id": "483.12",
+        "section": "F609",
+        "title": "Staffing"
+      },
+      {
+        "id": "483.12",
+        "section": "F610",
+        "title": "Resident's Rights"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "When reviewing a long-term care facility's records, what information should be readily available for surveyors according to the regulations?",
+    "choices": [
+      "A. Employee payroll records",
+      "B. Resident medical records",
+      "C. Proof of staff training and certifications",
+      "D. Facility maintenance logs"
+    ],
+    "correct_answers": [
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "Regulations require long-term care facilities to maintain and provide access to resident medical records (F514), proof of staff training and certifications (F567), and facility maintenance logs for surveyor review. These records are essential for assessing compliance and quality of care.",
+    "regulations": [
+      {
+        "id": "483.70",
+        "section": "F514",
+        "title": "Resident Records"
+      },
+      {
+        "id": "483.70",
+        "section": "F567",
+        "title": "In-Service Training"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "Scenario: A long-term care facility undergoes a change in ownership. What action must the facility take regarding the disclosure of ownership information?",
+    "choices": [
+      "A. Notify the residents and their families within 24 hours",
+      "B. Include ownership details in the facility's brochure",
+      "C. Submit ownership disclosure to the state agency within 60 days",
+      "D. Post ownership information visibly in the facility"
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Facilities are required to disclose any changes in ownership to the state agency within 60 days (F605). This ensures transparency and accountability in the management of long-term care facilities. Notifying residents/families directly or publicly displaying ownership details are not regulatory requirements.",
+    "regulations": [
+      {
+        "id": "483.70",
+        "section": "F605",
+        "title": "Disclosure of Ownership"
+      },
+      {
+        "id": "483.70",
+        "section": "F606",
+        "title": "Changes in Ownership"
+      }
+    ]
+  },
+  {
+    "ksa": "E",
+    "question": "During a facility assessment, what key areas should a surveyor focus on to ensure compliance with regulatory requirements?",
+    "choices": [
+      "A. Staff scheduling practices",
+      "B. Emergency preparedness plans",
+      "C. Resident dietary preferences",
+      "D. Social activities for residents"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Facility assessments should include a review of the facility's emergency preparedness plans to ensure compliance with regulations (F684). This evaluation is crucial for identifying potential gaps in emergency response protocols and promoting resident safety during unforeseen events.",
+    "regulations": [
+      {
+        "id": "483.70",
+        "section": "F684",
+        "title": "Emergency Preparedness"
+      },
+      {
+        "id": "483.70",
+        "section": "F688",
+        "title": "Physical Environment"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: During a survey of a long-term care facility, you discover a resident experiencing severe tooth pain and swelling in the evening when dental services are not available. What should the facility provide in terms of emergency dental services?",
+    "choices": [
+      "A. Arrange for immediate transport to a nearby emergency department",
+      "B. Offer pain medication and schedule an appointment for the resident the next day",
+      "C. Contact an on-call dentist for evaluation and treatment",
+      "D. Wait until the next scheduled dental visit for assessment"
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Facilities must have procedures for providing emergency dental services 24 hours a day (F740). In this scenario, contacting an on-call dentist for evaluation and treatment is the appropriate response to address the resident's immediate dental needs.",
+    "regulations": [
+      {
+        "id": "483.55",
+        "section": "F740",
+        "title": "Emergency Dental Services"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "In the context of long-term care facility surveys, what assistance should be provided to residents who require referrals for specialized dental services?",
+    "choices": [
+      "A. Residents must independently arrange for specialized dental referrals",
+      "B. Facility staff should facilitate timely referrals for residents in need",
+      "C. Referrals for dental services are not within the scope of long-term care facilities",
+      "D. Residents are responsible for seeking out their own dental specialists"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Facilities must assist residents in obtaining necessary dental services, including referrals for specialized care (F740). Staff should play an active role in coordinating and facilitating referrals to ensure residents receive appropriate dental treatment.",
+    "regulations": [
+      {
+        "id": "483.55",
+        "section": "F740",
+        "title": "Referral Assistance for Dental Services"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: A resident in a long-term care facility requires dental treatment but has difficulty scheduling appointments due to mobility issues. How should the facility assist the resident with appointment scheduling?",
+    "choices": [
+      "A. Inform the resident to manage their own appointment scheduling",
+      "B. Provide transportation assistance for the resident to attend appointments",
+      "C. Advise the resident to contact the dental office directly for appointments",
+      "D. Allow the resident to skip appointments if it's challenging to schedule"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Long-term care facilities should assist residents in scheduling and attending necessary dental appointments, especially when mobility issues are a concern (F740). Providing transportation assistance helps ensure residents can access essential dental care despite any mobility limitations.",
+    "regulations": [
+      {
+        "id": "483.55",
+        "section": "F740",
+        "title": "Appointment Assistance for Dental Services"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "What procedures should a long-term care facility have in place regarding pharmacy services to prevent significant medication errors?",
+    "choices": [
+      "A. Regularly change pharmacy providers to avoid errors",
+      "B. Implement a system for timely and accurate medication administration",
+      "C. Allow residents to self-administer medications to reduce errors",
+      "D. Conduct monthly audits of pharmacy records for errors"
+    ],
+    "correct_answers": [
+      "B",
+      "D"
+    ],
+    "explanation": "Facilities must establish and maintain procedures to prevent significant medication errors (F761). Implementing a system for accurate medication administration and conducting regular audits of pharmacy records are essential steps to minimize medication errors and ensure resident safety.",
+    "regulations": [
+      {
+        "id": "483.45",
+        "section": "F761",
+        "title": "Procedures for Pharmacy Services"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "During a survey of a long-term care facility, you discover a medication error where the wrong dosage of a resident's medication was administered. What actions should the facility take in response to this medication error?",
+    "choices": [
+      "A. Report the error to the state regulatory agency only if it leads to harm",
+      "B. Document the error internally without taking further action",
+      "C. Review the error, take corrective actions, and report it to the state agency",
+      "D. Ignore the error if the resident does not show immediate adverse effects"
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Facilities must have procedures for addressing medication errors promptly (F761). In the event of a medication error, the facility should review the error, implement corrective actions to prevent recurrence, and report the incident to the appropriate regulatory agencies as required to ensure resident safety and compliance.",
+    "regulations": [
+      {
+        "id": "483.45",
+        "section": "F761",
+        "title": "Medication Errors"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: During a resident assessment review, you notice discrepancies between the Minimum Data Set (MDS) and the resident's care plan. What should you do as a surveyor?",
+    "choices": [
+      "A. Document the discrepancies and discuss them with the facility's administrator",
+      "B. Request clarification from the nursing staff responsible for the assessments",
+      "C. Compare the MDS with the resident's medical records for further verification",
+      "D. Ignore the discrepancies as they may be minor errors"
+    ],
+    "correct_answers": [
+      "A",
+      "C"
+    ],
+    "explanation": "As a surveyor, it is essential to address discrepancies between the MDS and the care plan to ensure accurate assessments and care planning. Documenting the discrepancies and discussing them with the facility's administrator (F655) and comparing the MDS with medical records are crucial steps to verify the accuracy of assessments (F656). Ignoring discrepancies can lead to deficient care.",
+    "regulations": [
+      {
+        "id": "483.20",
+        "section": "F655",
+        "title": "Comprehensive Assessment"
+      },
+      {
+        "id": "483.20",
+        "section": "F656",
+        "title": "Develop/Implement Comprehensive Care Plans"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: A long-term care facility has implemented a new Quality Assurance and Performance Improvement (QAPI) program. As a surveyor, what aspect of the program should you review to ensure compliance?",
+    "choices": [
+      "A. Staff training records on QAPI principles",
+      "B. Documentation of program feedback and improvements",
+      "C. Design of the facility's QAPI program",
+      "D. Resident complaint log related to QAPI activities"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "Reviewing the documentation of program feedback and improvements is essential to assess the effectiveness of the QAPI program (F865). Additionally, evaluating the design of the facility's QAPI program ensures that it meets regulatory requirements and promotes continuous quality improvement.",
+    "regulations": [
+      {
+        "id": "483.75",
+        "section": "F865",
+        "title": "QAPI Program and Plan"
+      },
+      {
+        "id": "483.75",
+        "section": "F866",
+        "title": "QAPI Systematic Analysis and Systemic Action"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "In the context of Resident Assessment, what is the significance of coordinating assessment findings with the interdisciplinary team?",
+    "choices": [
+      "A. It helps in identifying potential deficiencies in care provision",
+      "B. It ensures consistent documentation practices",
+      "C. It streamlines the assessment process for surveyors",
+      "D. It enables comprehensive care planning and interventions"
+    ],
+    "correct_answers": [
+      "A",
+      "D"
+    ],
+    "explanation": "Coordinating assessment findings with the interdisciplinary team is crucial for identifying potential deficiencies in care provision (F641) and enabling comprehensive care planning and interventions (F656). This collaboration ensures a holistic approach to resident care and enhances the accuracy and effectiveness of assessments.",
+    "regulations": [
+      {
+        "id": "483.20",
+        "section": "F641",
+        "title": "Change in Care"
+      },
+      {
+        "id": "483.20",
+        "section": "F656",
+        "title": "Develop/Implement Comprehensive Care Plans"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "When conducting a review of a facility's documentation related to Quality Assurance and Performance Improvement (QAPI), what should a surveyor pay particular attention to?",
+    "choices": [
+      "A. Frequency of staff meetings to discuss QAPI initiatives",
+      "B. Evidence of corrective actions taken in response to identified issues",
+      "C. Number of QAPI surveys conducted by the facility",
+      "D. Staff satisfaction survey results regarding the QAPI program"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Surveyors should pay particular attention to evidence of corrective actions taken in response to identified issues within the QAPI program (F873). This demonstrates the facility's commitment to quality improvement and resident safety.",
+    "regulations": [
+      {
+        "id": "483.75",
+        "section": "F873",
+        "title": "QAPI Program Data"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: As part of the Quality Assurance and Performance Improvement (QAPI) review, you find that the facility's program lacks a mechanism for obtaining feedback from residents and families. What deficiency should you address?",
+    "choices": [
+      "A. Inadequate staff training on QAPI principles",
+      "B. Lack of documentation regarding QAPI activities",
+      "C. Absence of resident and family involvement in the QAPI process",
+      "D. Failure to conduct regular audits of the QAPI program"
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "The absence of mechanisms for obtaining feedback from residents and families within the QAPI program leads to a deficiency in involving key stakeholders in quality improvement efforts (F869). Addressing this deficiency is critical to ensure a resident-centered approach to QAPI.",
+    "regulations": [
+      {
+        "id": "483.75",
+        "section": "F869",
+        "title": "QAPI Program and Plan"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: A resident with dementia displays aggressive behavior towards staff members during meal times. What should the facility ensure to provide appropriate treatment in this situation?",
+    "choices": [
+      "A. Restraining the resident during meals to prevent harm to others",
+      "B. Implementing individualized care plans to address the resident's behavior",
+      "C. Administering sedative medications to manage the aggression",
+      "D. Ignoring the behavior if it does not pose an immediate risk"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "The facility should implement individualized care plans (F740) to address the resident's behavior. Restraining the resident or sedating them without proper assessment and intervention is not in line with providing appropriate treatment for behavioral symptoms in dementia care.",
+    "regulations": [
+      {
+        "id": "483.40",
+        "section": "F740",
+        "title": "Behavioral Health Services"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "Which of the following are important considerations for promoting emotional and psychosocial well-being in residents of a long-term care facility?",
+    "choices": [
+      "A. Encouraging social interactions and engagement in activities",
+      "B. Providing access to individual counseling services",
+      "C. Allowing residents to isolate themselves in their rooms if they prefer solitude",
+      "D. Creating a supportive and respectful environment for residents"
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "D"
+    ],
+    "explanation": "Promoting emotional and psychosocial well-being involves encouraging social interactions (F699), providing access to counseling services (F741), and creating a supportive environment for residents. Allowing isolation without interventions to support emotional health may lead to negative outcomes for residents.",
+    "regulations": [
+      {
+        "id": "483.40",
+        "section": "F699",
+        "title": "Behavioral Health Services"
+      },
+      {
+        "id": "483.40",
+        "section": "F741",
+        "title": "Treatment/Services for Mental/Psychosocial Concerns"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "In the context of Food and Nutrition Services, what is the significance of providing adaptive equipment to residents?",
+    "choices": [
+      "A. Ensuring residents with physical limitations can independently eat",
+      "B. Decreasing meal frequency to simplify dining procedures",
+      "C. Limiting residents' food choices to prevent overeating",
+      "D. Ignoring residents' dietary preferences for efficiency"
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Providing adaptive equipment (F692) ensures that residents with physical limitations can independently eat, promoting their autonomy and dignity during meal times. This practice aligns with regulations that focus on maintaining residents' functional abilities and quality of life.",
+    "regulations": [
+      {
+        "id": "483.60",
+        "section": "F692",
+        "title": "Food and Drink"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "How should a long-term care facility take religious and cultural considerations into account when planning meal services for residents?",
+    "choices": [
+      "A. Serving only generic meals that accommodate all dietary restrictions",
+      "B. Offering diverse menu options to accommodate various cultural and religious dietary needs",
+      "C. Excluding religious considerations to streamline meal planning",
+      "D. Allowing staff members to decide on meal options based on their preferences"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Facilities should offer diverse menu options (F692) to accommodate residents' cultural and religious dietary needs. Excluding these considerations or serving generic meals may not meet the regulatory requirements for providing person-centered care in Food and Nutrition Services.",
+    "regulations": [
+      {
+        "id": "483.60",
+        "section": "F692",
+        "title": "Food and Drink"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "What is the recommended approach regarding meal frequency for residents in a long-term care facility?",
+    "choices": [
+      "A. Limiting residents to two meals per day to control costs",
+      "B. Allowing residents to skip meals as needed to fit staff schedules",
+      "C. Offering regular and timely meals throughout the day",
+      "D. Providing meals only during designated meal times, regardless of residents' preferences"
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "The recommended approach is to offer regular and timely meals throughout the day (F692) to meet residents' nutritional needs and promote overall well-being. Limiting meal frequency or enforcing rigid meal schedules may not align with regulations focused on providing adequate nutrition and individualized care.",
+    "regulations": [
+      {
+        "id": "483.60",
+        "section": "F692",
+        "title": "Food and Drink"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: When reviewing a long-term care facility's records, you notice that the facility has implemented a binding arbitration agreement with its residents. What should be your primary concern as a surveyor?",
+    "choices": [
+      "A. Ensuring all residents have signed the agreement",
+      "B. Verifying that the agreement complies with federal regulations",
+      "C. Reporting the facility for implementing such agreements",
+      "D. Ignoring the presence of the agreement in your assessment"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "As a surveyor, your primary concern should be to verify that any binding arbitration agreement in place complies with federal regulations. Facilities must meet specific requirements outlined in the regulations to ensure resident rights are protected (F813). Reporting and addressing non-compliance is crucial for resident safety and rights.",
+    "regulations": [
+      {
+        "id": "483.70",
+        "section": "F813",
+        "title": "Resident Protections"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: A long-term care facility announces its closure due to financial reasons. What actions should the facility take to comply with regulations regarding the closure process?",
+    "choices": [
+      "A. Notify residents and their families at least 30 days in advance",
+      "B. Develop a plan for the safe transfer of residents",
+      "C. Notify the State Survey Agency of the closure",
+      "D. Close the facility without any formal procedures"
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Facility closure must adhere to specific regulations to ensure resident safety and continuity of care (F580). The facility should notify residents, families, and the State Survey Agency in advance, develop a plan for safe resident transfer, and follow formal closure procedures. Closing without proper processes can lead to non-compliance and risks to resident well-being.",
+    "regulations": [
+      {
+        "id": "483.70",
+        "section": "F580",
+        "title": "Notification of Facility Closure"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "What is the importance of maintaining accurate and complete facility records in a long-term care facility?",
+    "choices": [
+      "A. Records are essential for billing purposes only",
+      "B. Records ensure continuity of care for residents",
+      "C. Records primarily serve the facility's administrative needs",
+      "D. Records are not necessary for surveyors' assessments"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Accurate and complete facility records play a crucial role in ensuring continuity of care for residents (F584). These records provide vital information about residents' health status, care plans, and treatments. Surveyors rely on these records to assess compliance with regulations and the quality of care provided.",
+    "regulations": [
+      {
+        "id": "483.70",
+        "section": "F584",
+        "title": "Accuracy of Facility Records"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Which specialized rehabilitative service focuses on the treatment of individuals with mental health conditions in a long-term care facility?",
+    "choices": [
+      "A. Mental health rehabilitation",
+      "B. Physical therapy",
+      "C. Respiratory therapy",
+      "D. Speech therapy"
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "Mental health rehabilitation is a specialized service that focuses on the treatment and support of individuals with mental health conditions. This service helps residents improve their mental well-being, manage symptoms, and enhance their quality of life. Surveyors should ensure facilities provide appropriate mental health rehabilitative services as needed (F639).",
+    "regulations": [
+      {
+        "id": "483.65",
+        "section": "F639",
+        "title": "Comprehensive Assessment"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Which specialized rehabilitative service helps residents regain or improve their physical function, mobility, and strength?",
+    "choices": [
+      "A. Mental health rehabilitation",
+      "B. Physical therapy",
+      "C. Respiratory therapy",
+      "D. Occupational therapy"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Physical therapy is a specialized rehabilitative service focused on helping residents regain or improve physical function, mobility, and strength. It plays a critical role in rehabilitation and restoring residents' independence. Surveyors should assess the provision of physical therapy services as part of the facility's comprehensive care plan (F647).",
+    "regulations": [
+      {
+        "id": "483.65",
+        "section": "F647",
+        "title": "Comprehensive Care Plan"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: As a surveyor, you are reviewing a long-term care facility's Quality Assurance and Performance Improvement (QAPI) program. What key element should the program address to ensure compliance with regulation 483.75?",
+    "choices": [
+      "A. Staff training on infection control measures",
+      "B. Routine resident room inspections",
+      "C. Regular data collection and analysis for performance improvement",
+      "D. Decorative changes in common areas"
+    ],
+    "correct_answers": [
+      "C"
+    ],
+    "explanation": "Regulation 483.75 requires facilities to maintain an effective, comprehensive, data-driven QAPI program. Regular data collection and analysis are essential components of a successful QAPI program, enabling facilities to identify areas for improvement and implement necessary changes (F865). Staff training and physical inspections, while important, do not directly address the core requirement of continuous performance improvement.",
+    "regulations": [
+      {
+        "id": "483.75",
+        "section": "F865",
+        "title": "QAPI Program"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "A facility has identified the need for a performance improvement project related to reducing medication errors. Which actions would align with best practices for implementing this project based on regulation 483.75?",
+    "choices": [
+      "A. Conducting a root cause analysis of medication errors",
+      "B. Ignoring staff input on the issue",
+      "C. Focusing solely on punitive measures for errors",
+      "D. Implementing changes without evaluating their impact"
+    ],
+    "correct_answers": [
+      "A"
+    ],
+    "explanation": "To comply with regulation 483.75, facilities must engage in systematic data analysis and the development of performance improvement projects. Conducting a root cause analysis of medication errors is a crucial step in understanding the underlying issues and developing effective interventions to reduce errors (F865). Ignoring staff input, focusing on punishment, or implementing changes without evaluation do not contribute to meaningful performance improvement.",
+    "regulations": [
+      {
+        "id": "483.75",
+        "section": "F865",
+        "title": "QAPI Program"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "When providing feedback to a long-term care facility about their QAPI program, what should a surveyor emphasize to ensure compliance with regulation 483.75?",
+    "choices": [
+      "A. The importance of prioritizing cost-cutting measures",
+      "B. Encouraging staff to avoid reporting incidents",
+      "C. Highlighting the need for minimal resident involvement",
+      "D. The value of engaging stakeholders in the improvement process"
+    ],
+    "correct_answers": [
+      "D"
+    ],
+    "explanation": "Regulation 483.75 emphasizes the importance of engaging stakeholders, including residents, in the facility's QAPI program. Feedback should stress the value of involving various parties in the performance improvement process to ensure a comprehensive and effective approach (F865). Prioritizing cost-cutting, discouraging incident reporting, or minimizing resident involvement goes against the regulatory requirement of inclusive and collaborative quality improvement efforts.",
+    "regulations": [
+      {
+        "id": "483.75",
+        "section": "F865",
+        "title": "QAPI Program"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "In the context of Resident Rights (483.10), which of the following aspects relate to self-determination for residents in long-term care facilities?",
+    "choices": [
+      "A. Restricting resident access to their personal funds",
+      "B. Allowing residents to make choices about their daily routines",
+      "C. Prohibiting resident participation in social activities",
+      "D. Mandating specific meal times for all residents"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Under regulation 483.10, residents have the right to self-determination, which includes the ability to make choices about their daily lives, activities, and routines. Allowing residents autonomy in decision-making promotes person-centered care and dignity (F561). Restricting choices, prohibiting social activities, or enforcing rigid schedules infringe upon residents' rights to self-determination.",
+    "regulations": [
+      {
+        "id": "483.10",
+        "section": "F561",
+        "title": "Right to Self-Determination"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "When handling grievances from residents in a long-term care facility, which actions demonstrate adherence to the regulations under 483.10?",
+    "choices": [
+      "A. Discouraging residents from filing complaints",
+      "B. Providing residents with grievance forms and guidance on the grievance process",
+      "C. Ignoring all grievances to avoid conflict",
+      "D. Punishing residents who raise concerns"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Regulation 483.10 guarantees residents the right to voice grievances without fear of retaliation. Facilities must provide residents with the necessary support and resources to file complaints and address their concerns (F563). Discouraging complaints, ignoring grievances, or punishing residents for raising issues violate residents' rights and regulatory requirements.",
+    "regulations": [
+      {
+        "id": "483.10",
+        "section": "F563",
+        "title": "Grievances"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: During a facility tour, you notice residents complaining about excessive noise levels from construction work nearby. What should you do as a surveyor?",
+    "choices": [
+      "A. Document the observation and inform facility management at the exit conference",
+      "B. Ignore the noise as it is temporary due to construction",
+      "C. Request immediate action from the facility to address the noise disturbance",
+      "D. Advise residents to use earplugs to cope with the noise"
+    ],
+    "correct_answers": [
+      "A",
+      "C"
+    ],
+    "explanation": "As a surveyor, it is crucial to document observations related to the physical environment (F-tags 483.90). Excessive noise levels can impact residents' well-being and quality of life. Requesting immediate action from the facility aligns with ensuring regulatory compliance and resident comfort. Ignoring the issue or advising residents to cope individually does not address the facility's responsibility to provide a suitable living environment.",
+    "regulations": [
+      {
+        "id": "483.90",
+        "section": "F871",
+        "title": "Physical Environment"
+      }
+    ]
+  },
+  {
+    "ksa": "J",
+    "question": "Scenario: A resident's room temperature is consistently below the comfortable range specified in regulations. What action should you take as a surveyor?",
+    "choices": [
+      "A. Notify the facility's maintenance department to adjust the room temperature",
+      "B. Document the temperature concern and discuss it with the Director of Nursing",
+      "C. Advise the resident to wear extra clothing to stay warm",
+      "D. Include the temperature observation in the final report without further action"
+    ],
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "Maintaining a comfortable temperature in resident areas is essential for their well-being (483.90). As a surveyor, you must take immediate action by notifying the facility's maintenance department to address the issue. Additionally, documenting the concern and discussing it with the Director of Nursing ensures that corrective measures are implemented. Advising residents to compensate for the inadequate temperature is not an acceptable solution.",
+    "regulations": [
+      {
+        "id": "483.90",
+        "section": "F927",
+        "title": "Physical Environment: Temperature and Ventilation"
+      }
+    ]
+  },
+  {
+    "ksa": "E",
+    "question": "Which factors should a surveyor consider when evaluating a facility's equipment maintenance practices for compliance?",
+    "choices": [
+      "A. Frequency of scheduled equipment checks",
+      "B. Staff training on equipment operation and maintenance",
+      "C. Availability of spare parts for emergency repairs",
+      "D. Manufacturer's recommended maintenance schedule only"
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "When assessing equipment maintenance in a facility, surveyors must consider multiple factors (483.90). These include the frequency of scheduled checks to prevent malfunction, staff training to ensure proper operation and maintenance, and the availability of spare parts for timely repairs. Relying solely on the manufacturer's recommendations may not cover all aspects necessary for regulatory compliance.",
+    "regulations": [
+      {
+        "id": "483.90",
+        "section": "F880",
+        "title": "Infection Control"
+      }
+    ]
+  },
+  {
+    "ksa": "G",
+    "question": "What aspects of care related to activities of daily living should a surveyor focus on to assess Quality of Care in a long-term care facility?",
+    "choices": [
+      "A. Resident's ability to independently perform daily tasks",
+      "B. Staff assistance provided for bathing, grooming, and dressing",
+      "C. Existence of individualized care plans for each resident's needs",
+      "D. Availability of external transportation services for social outings"
+    ],
+    "correct_answers": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Assessing Quality of Care (483.25) involves evaluating the residents' ability to perform activities of daily living independently, the level of staff assistance provided for tasks like bathing and grooming, and the presence of individualized care plans tailored to each resident's specific needs. External transportation services, while beneficial, are not directly related to assessing activities of daily living within the facility.",
+    "regulations": [
+      {
+        "id": "483.25",
+        "section": "F655",
+        "title": "Quality of Care"
+      }
+    ]
+  },
+  {
+    "ksa": "I",
+    "question": "When evaluating a long-term care facility's care provision for residents with vision and hearing impairments, what should a surveyor prioritize?",
+    "choices": [
+      "A. Availability of specialized devices like hearing aids and magnifiers",
+      "B. Staff training in communication techniques for residents with sensory impairments",
+      "C. Existence of periodic hearing and vision assessments for all residents",
+      "D. Provision of regular social events to promote interaction among residents"
+    ],
+    "correct_answers": [
+      "A",
+      "B"
+    ],
+    "explanation": "Surveyors assessing care for residents with vision and hearing impairments (483.25) should prioritize the availability of specialized devices like hearing aids and magnifiers to aid in communication and daily activities. Additionally, staff training in effective communication techniques for residents with sensory impairments is crucial for ensuring quality care. While periodic assessments are important, they do not directly address the immediate needs of residents with impairments. Social events, although beneficial, are not as critical as addressing sensory impairments directly.",
+    "regulations": [
+      {
+        "id": "483.25",
+        "section": "F679",
+        "title": "Quality of Care: Vision and Hearing"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: During a survey of a long-term care facility, you notice that some staff members are not wearing proper personal protective equipment (PPE) while providing care to residents with known infections. What action should you take as a surveyor?",
+    "choices": [
+      "A. Immediately issue a citation for non-compliance",
+      "B. Document the observation and discuss it with the facility's infection control coordinator",
+      "C. Ignore the issue since it is the facility's responsibility to enforce PPE use",
+      "D. Confront the staff members directly about their PPE usage"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "As a surveyor, it is essential to document any observations related to infection control practices and discuss them with the facility's appropriate personnel. This aligns with the requirement for facilities to have an infection control program (F880) and for surveyors to gather data to assess compliance with regulations (42 CFR 483.80).",
+    "regulations": [
+      {
+        "id": "483.80",
+        "section": "F880",
+        "title": "Infection Control"
+      }
+    ]
+  },
+  {
+    "ksa": "B",
+    "question": "During a survey, you review a long-term care facility's vaccination records and notice that a significant number of staff members are not up to date with their annual flu vaccinations. What actions should you take based on this finding?",
+    "choices": [
+      "A. Issue an immediate deficiency citation for non-compliance",
+      "B. Discuss the importance of staff vaccination with the facility's leadership",
+      "C. Recommend the facility implement a mandatory vaccination policy",
+      "D. Conduct an audit of the facility's infection control program"
+    ],
+    "correct_answers": [
+      "B",
+      "C"
+    ],
+    "explanation": "The deficiency in staff vaccination compliance relates to infection control practices and the facility's responsibility to prevent the spread of infections (F880). By discussing the importance of staff vaccination and recommending a mandatory policy, surveyors can help improve the facility's infection prevention measures in line with regulations (42 CFR 483.80).",
+    "regulations": [
+      {
+        "id": "483.80",
+        "section": "F880",
+        "title": "Infection Control"
+      }
+    ]
+  },
+  {
+    "ksa": "C",
+    "question": "Scenario: While observing a facility's COVID-19 testing procedures, you notice that the staff only test residents exhibiting symptoms and do not conduct regular asymptomatic testing as recommended by public health authorities. What should you do as a surveyor?",
+    "choices": [
+      "A. Immediately report the facility to the local health department",
+      "B. Document the observation and discuss it with the facility's infection control team",
+      "C. Conduct COVID-19 testing on all residents yourself",
+      "D. Ignore the testing procedures as it is outside the scope of the survey"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Surveyors should document any observations related to COVID-19 testing procedures and discuss them with the facility's infection control team to ensure compliance with infection control regulations (F880). This aligns with the requirement for facilities to have systems in place to prevent, control, and investigate infections (42 CFR 483.80).",
+    "regulations": [
+      {
+        "id": "483.80",
+        "section": "F880",
+        "title": "Infection Control"
+      }
+    ]
+  },
+  {
+    "ksa": "D",
+    "question": "During a Quality Assurance and Performance Improvement (QAPI) assessment, you find that a facility has not conducted any performance improvement projects related to infection control over the past year. What actions should you recommend as a surveyor?",
+    "choices": [
+      "A. Issue a citation for non-compliance with QAPI requirements",
+      "B. Advise the facility to prioritize infection control projects in their QAPI program",
+      "C. Conduct a performance improvement project on behalf of the facility",
+      "D. Ignore the lack of infection control projects if other aspects of QAPI are satisfactory"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Facilities are required to have an ongoing QAPI program that includes performance improvement projects addressing areas such as infection control (F865). By advising the facility to prioritize infection control projects within their QAPI program, surveyors can help improve the facility's quality of care in line with regulatory requirements (42 CFR 483.75).",
+    "regulations": [
+      {
+        "id": "483.75",
+        "section": "F865",
+        "title": "QAPI Program and Plan"
+      }
+    ]
+  },
+  {
+    "ksa": "A",
+    "question": "Scenario: During a review of a long-term care facility's documentation, you find incomplete records of staff training on proper PPE use and hand hygiene protocols. How should you address this as a surveyor?",
+    "choices": [
+      "A. Request immediate retraining for all staff members on infection control practices",
+      "B. Document the deficiency and discuss it with the facility's infection control coordinator",
+      "C. Ignore the incomplete documentation as long as staff demonstrate correct practices",
+      "D. Conduct a surprise audit of staff compliance with infection control protocols"
+    ],
+    "correct_answers": [
+      "B"
+    ],
+    "explanation": "Incomplete documentation of staff training on infection control practices reflects non-compliance with infection control regulations (F880) and the facility's responsibility to ensure staff are trained to prevent the spread of infections (42 CFR 483.80). As a surveyor, documenting the deficiency and discussing it with the facility's infection control coordinator is the appropriate action to address this issue.",
+    "regulations": [
+      {
+        "id": "483.80",
+        "section": "F880",
+        "title": "Infection Control"
+      }
+    ]
+  }
+]
